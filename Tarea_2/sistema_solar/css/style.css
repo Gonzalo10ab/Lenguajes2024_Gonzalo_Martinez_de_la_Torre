@@ -1,0 +1,39 @@
+/* Estilos  para la página */
+body {
+    font-family: Arial;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para el div principal */
+.principal {
+    max-width: 800px;
+    min-height: 900px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilos para los encabezados */
+h1 {
+    color: #2c3e50;
+}
+
+h2, h3 {
+    color: #34495e;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para enlaces */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
