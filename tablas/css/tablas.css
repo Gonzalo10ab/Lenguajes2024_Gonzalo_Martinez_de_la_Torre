@@ -1,0 +1,31 @@
+/* Estilos para la página */
+body {
+    font-family: Arial;
+}
+
+/* Estilo para la tabla */
+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 30%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+/* Estilo para el título */
+caption {
+    font-size: x-large;
+    margin: 10px 0;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
