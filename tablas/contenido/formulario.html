@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post">
+        <label for="name">Nombre</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="surname">Apellidos</label><br>
+        <input type="text" id="surname" name="surname" required><br>
+
+        <label for="job1">Empresa/Institución</label><br>
+        <input type="text" id="job1" name="job1" required><br>
+
+        <label for="type">Ámbito de la empresa</label><br>
+        <select id="types" name="typelist">
+            <option value="educacion">Educación</option>
+            <option value="financiero">Financiero</option>
+            <option value="tecnologica">Tecnológica</option>
+        </select><br>
+
+        <label for="job2">Cargo</label><br>
+        <input type="text" id="job2" name="job2" required><br>
+
+        <label for="user">Nombre de usuario</label><br>
+        <input type="text" id="user" name="user" required><br>
+
+        <label for="psw">Contraseña</label><br>
+        <input type="password" id="psw" name="psw" required><br>
+
+        <label for="psw2">Repite contraseña</label><br>
+        <input type="password" id="psw2" name="psw2" required><br>
+
+        <label for="email">Correo electrónico</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit">
+        <input type="reset"><br>
+
+    </form>
+</body>
+</html>
