@@ -1,17 +1,31 @@
 body {
     display: flex;
-    justify-content: center; /* Centra el main horizontalmente */
+    justify-content: center; 
+    align-items: center;
+    margin: 10px;
+}
+
+.header-navbar {
+    width: 100px;
+    height: auto;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
 
 main {
-    width: 80%;     /* O el ancho deseado */
-    margin: 0 auto; /* Centra horizontalmente */
+    background-color: #e91212;
+    text-align: center;
+    width: 50%;
 }
 
+main h1, h2, p {
+    margin: 10px;
+    padding: 10px;
+}
 
-
-
-img {
-    width: 800px;
-    height: 500px;
+main img {
+    max-width: 800px;
+    max-height: 450px;
 }
