@@ -5,40 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./images/logo.png">
     <title>Inventos</title>
 </head>
 
 <body>
     <header class="header-navbar">
-        <nav>
-            <figure>
-                <p>TITULO (MODIFICAR)</p>
-            </figure>
-        </nav>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Top 10 Inventos más importantes</h1>
     </header>
+
     <main class="principal">
-        <section>
-            <header>
-                <h1>Top 10 inventos más importantes para la humanidad</h1>
-            </header>
-            <article>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introducción</a></li>
+                    <li><a href="#fuego">El fuego</a></li>
+                    <li><a href="#rueda">La rueda</a></li>
+                    <li><a href="#arado">El arado</a></li>
+                    <li><a href="#polvora">La pólvora</a></li>
+                    <li><a href="#hormigon">El hormigón</a></li>
+                    <li><a href="#bombilla">La bombilla</a></li>
+                    <li><a href="#vapor">Máquina de vapor</a></li>
+                    <li><a href="#imprenta">La imprenta</a></li>
+                    <li><a href="#combustion">Motor de combustión</a></li>
+                    <li><a href="#ordenador">El ordenador</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="content">
+            <article id="intro">
+                <header>
+                    <h2>Introducción</h2>
+                </header>
                 <p>A lo largo de la historia, han habido multitud de inventos. Algunos han caído en el olvido, pero
                     otros han supuesto grandes avances sociales y tecnológicos para la humanidad. ¿Sabes cuáles han sido
-                    aquellos que cambiaron el curso de la historia?
-                </p>
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2dYGKBa4K_Q?si=awMsi3qJeCylUpZv"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
+                    aquellos que cambiaron el curso de la historia?</p>
+
+                <div class="media-container">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/2dYGKBa4K_Q?si=awMsi3qJeCylUpZv"
+                            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="iframe-container">
+                        <video controls>
+                            <source src="./images/video_propio.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="./images/audio_propio.mp3" type="audio/mp3">
+                        Tu navegador no soporta la etiqueta de audio.
+                    </audio>
+                </div>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>El fuego</h2>
-            </header>
-            <article>
+
+
+            <article id="fuego">
+                <header>
+                    <h2>El fuego</h2>
+                </header>
                 <p>Hacer y controlar el fuego supuso un antes y después para el desarrollo del ser humano. Gracias al
                     fuego el hombre pudo calentarse, generar luz, cocinar, fabricar pequeños utensilios e incluso
                     defenderse de ataques. Según las investigaciones arqueológicas, fue la especie Homo Erectus quien
@@ -49,80 +79,74 @@
                     <img src="images/fuego.png">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>La rueda</h2>
-            </header>
-            <article>
+
+            <article id="rueda">
+                <header>
+                    <h2>La rueda</h2>
+                </header>
                 <p>Data del año 3.500 a.C. en Mesopotamia. Facilitó el transporte y la movilidad de manera global y
                     cotidiana. Pero también produjo desarrollos importantes en el terreno de la industrialización. Es
                     uno de los inventos fundamentales de la historia de la humanidad y también fundamental para la
                     posterior Revolución industrial ya que es imprescindible para la maquinaria.</p>
                 <figure>
-                    <img src="images/rueda.jpg">
+                    <img src="images/rueda.jpg" alt="La rueda">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>El arado. </h2>
-            </header>
-            <article>
+
+            <article id="arado">
+                <header>
+                    <h2>El arado</h2>
+                </header>
                 <p>Apareció de manera más o menos coetánea a la rueda y también en Mesopotamia. Cambió el desarrollo del
                     trabajo del campo para abrir huecos y mover la tierra. Sin duda uno de los inventos más importantes
                     de la historia, ya que permitió la evolución de la agricultura. Arar aumenta la porosidad de la
-                    tierra y, por tanto, que crezcan las plantas.</p>
+                    tierra y, por tanto, que crezcan las plantas</p>
                 <figure>
-                    <img src="images/arado.jpg">
+                    <img src="images/arado.jpg" alt="El arado">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>La pólvora. </h2>
-            </header>
-            <article>
-                <p> Fue creada en el siglo X y tuvo un primer uso bélico, lo cual cambió la forma de combatir las
+
+            <article id="polvora">
+                <header>
+                    <h2>La pólvora</h2>
+                </header>
+                <p>Fue creada en el siglo X y tuvo un primer uso bélico, lo cual cambió la forma de combatir las
                     guerras. Después, se aplicó a trabajos como la minería, para la cual fue esencial.</p>
                 <figure>
-                    <img src="images/polvora.jpg">
+                    <img src="images/polvora.jpg" alt="La pólvora">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>El hormigón</h2>
-            </header>
-            <article>
+
+            <article id="hormigon">
+                <header>
+                    <h2>El hormigón</h2>
+                </header>
                 <p>Combinación de piedras, arena y cemento fluido que al endurecerse resulta muy resistente. Tras su
                     descubrimiento se convirtió rápidamente en el elemento esencial para la construcción de edificios.
                     ¿Sabías que el hormigón tiene un alto poder contaminante sobre la atmósfera?</p>
                 <figure>
-                    <img src="images/hormigon.jpg">
+                    <img src="images/hormigon.jpg" alt="El hormigón">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>La bombilla</h2>
-            </header>
-            <article>
+
+            <article id="bombilla">
+                <header>
+                    <h2>La bombilla</h2>
+                </header>
                 <p>Thomas Edison y Josephn Swan, dos inventores famosos provenientes de Estados Unidos e Inglaterra
                     respectivamente, patentaron en 1879 y 1880 la primera bombilla. Su comercialización supuso un antes
                     y después para la sociedad. Con la aparición de la bombilla eléctrica, las horas de actividad humana
                     se han extendido cuantitativamente. La eficiencia energética es un paso para construir un planeta
                     más sostenible.</p>
                 <figure>
-                    <img src="images/bombilla.webp">
+                    <img src="images/bombilla.webp" alt="La bombilla">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>Máquina de vapor</h2>
-            </header>
-            <article>
+
+            <article id="vapor">
+                <header>
+                    <h2>Máquina de vapor</h2>
+                </header>
                 <p>Lo que se convertiría en uno de los inventos mas importantes de la historia, hizo su aparición en el
                     año 1698. Fue esencial para el desarrollo de la Revolución Industrial en las fábricas para el
                     movimiento de las máquinas, permitiendo una producción mucho más rápida. En el año 1769, James Watt
@@ -131,52 +155,53 @@
                     supuso una máquina de vapor mucho más económica y eficiente. Esto fue lo que permitió llevar la
                     máquina de vapor al mundo del transporte.</p>
                 <figure>
-                    <img src="images/maquina_vapor.jpg">
+                    <img src="images/maquina_vapor.jpg" alt="Máquina de vapor">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>La imprenta</h2>
-            </header>
-            <article>
+
+            <article id="imprenta">
+                <header>
+                    <h2>La imprenta</h2>
+                </header>
                 <p>Con ella, la cultura y la información se popularizó y llegó a todo el mundo. La inventó Johannes
                     Gutenberg en 1400 y cien años después funcionaban en toda Europa de manera masiva. Gutenberg se
                     convertiría así en uno de los inventores más famosos e influyentes de la historia de la humanidad. Y
                     es que la imprenta ha tenido un impacto indiscutible sobre la difusión de la información y, por
                     ende, de la democratización de la educación.</p>
                 <figure>
-                    <img src="images/imprenta.jpg">
+                    <img src="images/imprenta.jpg" alt="La imprenta">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>Motor de combustión</h2>
-            </header>
-            <article>
+
+            <article id="combustion">
+                <header>
+                    <h2>Motor de combustión</h2>
+                </header>
                 <p>El motor de vapor fue esencial, tanto como su eliminación cuando se creó este motor que convierte el
                     aire y el combustible en energía.</p>
                 <figure>
-                    <img src="images/motor.webp">
+                    <img src="images/motor.webp" alt="Motor de combustión">
                 </figure>
             </article>
-        </section>
-        <section>
-            <header>
-                <h2>El ordenador</h2>
-            </header>
-            <article>
+
+            <article id="ordenador">
+                <header>
+                    <h2>El ordenador</h2>
+                </header>
                 <p>Charles Babbage sentó las bases para la computación a comienzos del siglo XIX. Y en 1936 fue Alan
                     Turing quien formalizó los conceptos de algoritmo y creó la famosa máquina de Turing. Ambos fueron
                     esenciales para la creación del ordenador moderno, que nació en 1938 de manos del alemán Konrad
                     Zuse.</p>
                 <figure>
-                    <img src="images/ordenador.jpg">
+                    <img src="images/ordenador.jpg" alt="El ordenador">
                 </figure>
             </article>
         </section>
     </main>
+
+    <footer>
+        <p class="footer-text">Todos los derechos reservados &copy; 2024</p>
+    </footer>
 </body>
 
 </html>
