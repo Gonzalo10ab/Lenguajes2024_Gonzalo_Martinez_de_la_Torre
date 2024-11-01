@@ -1,31 +1,52 @@
 /* Estilos para la página */
 body {
-    font-family: Arial;
+    font-family: Arial; /* Define la fuente base como Arial para una lectura clara y sencilla */
 }
 
-/* Estilo para la tabla */
+/* Estilo para el contenedor de tablas */
 div {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Usa flexbox para organizar el contenido */
+    justify-content: space-around; /* Separa uniformemente los elementos dentro del div */
 }
 
 /* Estilo para la tabla */
 table {
-    width: 30%;
-    border-collapse: collapse;
+    width: 30%; /* La tabla ocupará el 30% del ancho del contenedor */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas de la tabla */
 }
 
 td {
-    border: 1px solid gray;
-    padding: 15px;
+    border: 1px solid gray; /* Bordes grises alrededor de cada celda */
+    padding: 15px; /* Espaciado interno para mejor apariencia del contenido de las celdas */
 }
 
-/* Estilo para el título */
+/* Estilo para el título de la tabla */
 caption {
-    font-size: x-large;
-    margin: 10px 0;
-    background-color: blue;
-    color: white;
-    padding: 10px;
+    font-size: x-large; /* Tamaño de letra grande para el título de la tabla */
+    margin: 10px 0; /* Espacio superior e inferior para separar el título de la tabla */
+    background-color: blue; /* Fondo azul para destacar el título */
+    color: white; /* Texto blanco para mejor contraste sobre el fondo azul */
+    padding: 10px; /* Relleno interno para que el título esté centrado y acolchado */
 }
 
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en la esquina superior izquierda, visible en todo momento */
+    top: 10px; /* Espacio desde el borde superior */
+    left: 10px; /* Espacio desde el borde izquierdo */
+    z-index: 10; /* Coloca el logo por encima del contenido para visibilidad */
+    display: flex; /* Permite alineación interna de la imagen del logo */
+    align-items: center; /* Centra la imagen verticalmente dentro del enlace */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Define la altura de la imagen del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Suave transición para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Agranda la imagen del logo ligeramente al pasar el cursor */
+}

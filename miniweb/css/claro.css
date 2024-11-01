@@ -1,0 +1,92 @@
+/* Reset básico para evitar diferencias de estilo entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+}
+
+/* Contenedor centrado para el contenido */
+.principal {
+    max-width: 600px; /* Ancho máximo del contenido */
+    text-align: center; /* Alinea el texto al centro */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    padding: 2rem; /* Relleno interno para separar el contenido de los bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    display: flex; /* Flexbox para centrar el contenido interno */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+
+/* Estilo para el botón */
+#boton {
+    margin-bottom: 1.5rem; /* Espacio entre el botón y el contenido siguiente */
+    padding: 10px 20px; /* Relleno interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición para el efecto hover */
+}
+
+/* Efecto hover en el botón */
+#boton:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para los párrafos */
+p {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Estilo general para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en la esquina, visible siempre en la pantalla */
+    top: 10px; /* Espacio desde el borde superior */
+    left: 10px; /* Espacio desde el borde izquierdo */
+    z-index: 10; /* Asegura que el logo esté encima del resto del contenido */
+    display: flex; /* Alinea la imagen dentro del enlace */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Añade una transición para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Agranda el logo ligeramente al pasar el cursor */
+}

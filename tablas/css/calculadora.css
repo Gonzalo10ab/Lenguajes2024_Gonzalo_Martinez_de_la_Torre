@@ -1,36 +1,58 @@
 /* Estilos para la página */
 body {
-    font-family: Arial;
-    background-color: #d3d3d3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    font-family: Arial; /* Fuente básica y fácil de leer */
+    background-color: #d3d3d3; /* Fondo gris claro */
+    display: flex; /* Centra el contenido */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    flex-direction: column; /* Organiza el contenido en una columna */
 }
 
 /* Estilo para la tabla */
 table, th, td {
-    border: none;
-    text-align: center;
-    width: 20%;
+    border: none; /* Sin bordes visibles en la tabla */
+    text-align: center; /* Centra el texto dentro de las celdas */
+    width: 20%; /* Define un ancho del 20% para cada columna de la tabla */
 }
 
 td {
-    height: 80px;
+    height: 80px; /* Altura fija para las celdas, para consistencia */
 }
 
 /* Botón dentro del td */
 button {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ocupa todo el ancho de la celda */
+    height: 100%; /* Ocupa todo el alto de la celda */
 }
 
 button:hover {
-    background-color: #d1d1d1;
+    background-color: #d1d1d1; /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 
 /* Estilo para el input */
 input {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: x-large ;
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    padding: 10px; /* Espacio interno para una mayor área de escritura */
+    font-size: x-large; /* Fuente grande para mejor visibilidad */
+}
+
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en la pantalla, permanece al hacer scroll */
+    top: 10px; /* Distancia del borde superior */
+    left: 10px; /* Distancia del borde izquierdo */
+    z-index: 10; /* Mantiene el logo por encima de otros elementos */
+    display: flex; /* Permite la alineación del contenido del enlace */
+    align-items: center; /* Centra verticalmente el logo dentro del enlace */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura específica para el logo */
+    width: auto; /* Mantiene la proporción original de la imagen */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño del logo ligeramente al pasar el cursor */
 }

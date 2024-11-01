@@ -1,0 +1,82 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4); /* Fondo con degradado verde-azul */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center; /* Texto centrado */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    padding: 40px 60px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 700px; /* Ancho máximo */
+    width: 100%; /* Ancho adaptable */
+}
+
+/* Título principal */
+h1 {
+    font-size: 34px; /* Tamaño de texto grande */
+    margin: 0 0 15px; /* Espaciado inferior */
+    color: #333; /* Color oscuro */
+}
+
+/* Párrafo introductorio */
+p {
+    font-size: 18px; /* Tamaño moderado */
+    margin-bottom: 30px; /* Espaciado inferior */
+    color: #555; /* Color gris */
+}
+
+/* Contenedor para los enlaces */
+.link-container {
+    display: flex;
+    flex-direction: column; /* Enlaces en columna */
+    gap: 15px; /* Espaciado entre enlaces */
+}
+
+/* Estilo para los enlaces */
+.link-container a {
+    text-decoration: none; /* Sin subrayado */
+    font-size: 20px; /* Texto más grande */
+    color: #ffffff; /* Texto blanco */
+    background-color: #6c63ff; /* Fondo morado */
+    padding: 12px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+/* Efecto hover en los enlaces */
+.link-container a:hover {
+    background-color: #5a54e2; /* Color más oscuro al hacer hover */
+    transform: translateY(-3px); /* Eleva el enlace ligeramente */
+}
+
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en la esquina, visible siempre en la pantalla */
+    top: 10px; /* Espacio desde el borde superior */
+    left: 10px; /* Espacio desde el borde izquierdo */
+    z-index: 10; /* Asegura que el logo esté encima del resto del contenido */
+    display: flex; /* Alinea la imagen dentro del enlace */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Añade una transición para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Agranda el logo ligeramente al pasar el cursor */
+}

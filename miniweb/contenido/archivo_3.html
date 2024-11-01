@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/web_semantica/images/logo.png">
     <meta name="author" content="Gonzalo Martínez de la Torre">
-    <title>Index</title>
+    <title>Archivo 3</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css">
+    <script>
+        function tema_activo(){
+        theme.setAttribute('href', '../'+ localStorage.getItem("tema"));
+        }
+    </script>
 </head>
-<body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro veritatis eaque natus explicabo aut vitae nobis blanitiis corporis dignissimos, officiis est atque necessitatibus numquam voluptatum. Esse dicta aspernatur placeat dolores.</p>
-    <p><a href="../index.html">Ir a "Index"</a></p>
+
+<body onload="tema_activo()">
+    <a href="/index.html" class="logo">
+        <img src="/web_semantica/images/logo.png" alt="Logo">
+    </a>
+    <div class="principal">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro veritatis eaque natus explicabo aut vitae nobis
+            blanitiis corporis dignissimos, officiis est atque necessitatibus numquam voluptatum. Esse dicta aspernatur
+            placeat dolores.</p>
+        <p><a href="../index.html">Ir a "Index"</a></p>
+    </div>
 </body>
+
 </html>

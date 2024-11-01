@@ -1,170 +1,192 @@
 /* Estilo general para el cuerpo */
 body {
-    max-width: 1200px;
-    margin: 0 auto; 
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh; 
-    background-color: #f4f4f4; 
+    max-width: 1200px; /* Ancho máximo para el contenido, centrado en pantalla */
+    margin: 0 auto; /* Centra el contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente principal */
+    display: flex; /* Flexbox para estructurar las secciones principales */
+    flex-direction: column; /* Apila elementos verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #f4f4f4; /* Color de fondo claro */
 }
 
 /* Estilo del header principal */
 .header-navbar {
-    background-color: #2E7D32; 
-    color: white;
-    padding: 15px 20px; 
-    display: flex; 
-    align-items: center; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    background-color: #2E7D32; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    padding: 15px 20px; /* Espaciado interno */
+    display: flex; /* Flexbox para alinear contenido */
+    align-items: center; /* Alinea contenido verticalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el header */
 }
 
 /* Estilo del logo */
 .logo {
-    width: 60px; 
-    height: auto;
-    margin-right: 20px; 
+    position: fixed; /* Fija el logo en la esquina superior derecha */
+    right: 10px; /* Separación del borde derecho */
+    z-index: 10; /* Asegura que el logo esté al frente */
+    display: flex; /* Flexbox para centrar la imagen */
+    align-items: center; /* Alinea la imagen verticalmente */
 }
 
-/* Estilo del título principal h1 */
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Agranda el logo al pasar el cursor */
+}
+
+/* Estilo del título principal h1 en el header */
 .header-navbar h1 {
-    font-size: 24px; 
-    font-weight: bold; 
-    margin: 0; 
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    margin: 0; /* Sin margen adicional */
 }
 
-/* Estilo del main */
+/* Estilo del contenedor principal */
 .principal {
-    display: flex; 
-    flex: 1; 
+    display: flex; /* Flexbox para estructurar el sidebar y contenido */
+    flex: 1; /* Ocupa todo el espacio restante */
 }
 
-/* Estilo del aside */
+/* Estilo del sidebar */
 .sidebar {
-    width: 200px; 
-    background-color: #333; 
-    padding: 20px;
-    position: sticky; 
-    top: 0; 
-    height: 100vh; 
-    overflow-y: auto; 
+    width: 200px; /* Ancho fijo para el sidebar */
+    background-color: #333; /* Fondo oscuro */
+    padding: 20px; /* Espaciado interno */
+    position: sticky; /* Sidebar fijo al hacer scroll */
+    top: 0; /* Posición superior */
+    height: 100vh; /* Altura completa de la ventana */
+    overflow-y: auto; /* Permite scroll si el contenido es grande */
 }
 
-/* Estilo del navbar */
+/* Estilo del navbar dentro del sidebar */
 .sidebar nav ul {
-    list-style: none; 
-    padding: 0; 
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
 }
 
+/* Estilo de los elementos de la lista del sidebar */
 .sidebar nav ul li {
-    margin: 10px 0; 
+    margin: 10px 0; /* Separación entre elementos */
 }
 
+/* Estilo de los enlaces del sidebar */
 .sidebar nav ul li a {
-    color: white; 
-    text-decoration: none; 
-    padding: 10px; 
-    display: block; 
-    transition: background-color 0.3s; 
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Espaciado interno */
+    display: block; /* Ocupa todo el ancho del contenedor */
+    transition: background-color 0.3s; /* Transición al hacer hover */
 }
 
+/* Efecto hover en los enlaces del sidebar */
 .sidebar nav ul li a:hover {
-    background-color: #575757; 
+    background-color: #575757; /* Fondo gris oscuro */
 }
 
 /* Estilo del contenido principal */
 .content {
-    padding: 20px;
-    width: calc(100% - 200px); 
-    background-color: #ffffff; 
-    overflow-y: auto; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; /* Espaciado interno */
+    width: calc(100% - 200px); /* Ajusta el ancho para evitar el sidebar */
+    background-color: #ffffff; /* Fondo blanco */
+    overflow-y: auto; /* Scroll si el contenido es grande */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
 }
 
 /* Estilo de los artículos */
 article {
-    margin-bottom: 20px; 
-    padding: 15px;
-    background-color: #f9f9f9; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; /* Separación entre artículos */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 /* Estilo de las imágenes en el contenido principal */
 main img {
-    max-width: 50%; 
-    height: auto; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    max-width: 50%; /* Ancho máximo del 50% del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 /* Estilo para las imágenes en los artículos */
 article img {
-    max-width: 50%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
+    max-width: 50%; /* Ancho máximo del 50% del artículo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Se muestra como bloque */
+    margin: 0 auto; /* Centra la imagen */
 }
 
-/* Estilo de los títulos h2 */
+/* Estilo de los títulos h2 en los artículos */
 article h2 {
-    color: #2E7D32; 
-    font-size: 20px; 
-    margin-bottom: 10px; 
+    color: #2E7D32; /* Color verde */
+    font-size: 20px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Separación inferior */
 }
 
-/* Estilo para los párrafos */
+/* Estilo para los párrafos en el main */
 main p {
-    font-size: 16px; 
-    line-height: 1.6; 
-    color: #333; 
-    margin: 10px 0; 
-    padding: 5px; 
-    border-left: 4px solid #2E7D32; 
-    background-color: #fefefe; 
-    border-radius: 3px; 
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espacio entre líneas */
+    color: #333; /* Color gris oscuro */
+    margin: 10px 0; /* Separación superior e inferior */
+    padding: 5px; /* Espaciado interno */
+    border-left: 4px solid #2E7D32; /* Borde verde a la izquierda */
+    background-color: #fefefe; /* Fondo blanco */
+    border-radius: 3px; /* Bordes redondeados */
 }
 
+/* Contenedor para iframes */
 .iframe-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0; 
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centra el iframe */
+    margin: 20px 0; /* Margen superior e inferior */
 }
 
+/* Estilo de los iframes */
 .iframe-container iframe {
-    width: 400px; 
-    /* max-width: 400px;  */
-    height: 250px; 
+    width: 400px; /* Ancho fijo */
+    height: 250px; /* Altura fija */
 }
 
+/* Estilo de los videos */
 .iframe-container video {
-    width: 100%; 
-    /* max-width: 400px;  */
-    height: 250px; 
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 250px; /* Altura fija */
 }
 
+/* Contenedor para multimedia (imágenes, video, etc.) */
 .media-container {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    margin-bottom: 20px; 
+    display: flex; /* Flexbox para distribuir contenido */
+    justify-content: space-around; /* Espacio entre elementos */
+    align-items: center; /* Alinea verticalmente */
+    margin-bottom: 20px; /* Separación inferior */
 }
 
+/* Contenedor para elementos de audio */
 .audio-container {
-    text-align: center; 
-    margin-bottom: 10px;
+    text-align: center; /* Centra el contenido */
+    margin-bottom: 10px; /* Separación inferior */
 }
 
+/* Estilo del pie de página */
 footer {
-    background-color: #f8f8f8; 
-    padding: 15px; 
-    text-align: center; 
-    border-top: 1px solid #ccc; 
-    margin-top: 20px; 
+    background-color: #f8f8f8; /* Fondo gris claro */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    border-top: 1px solid #ccc; /* Línea en la parte superior */
+    margin-top: 20px; /* Separación superior */
 }
 
+/* Estilo para el texto en el pie de página */
 .footer-text {
-    font-style: italic; 
-    text-align: left; 
-    margin: 0; 
+    font-style: italic; /* Texto en cursiva */
+    text-align: left; /* Alineación a la izquierda */
+    margin: 0; /* Sin margen */
 }

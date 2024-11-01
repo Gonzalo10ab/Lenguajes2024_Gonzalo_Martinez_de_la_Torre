@@ -1,0 +1,77 @@
+/* Estilos para la página */
+body {
+    font-family: Arial; /* Define Arial como la fuente principal de la página */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    background-color: #8e4489; /* Fondo púrpura para toda la página */
+}
+
+/* Estilo para el contenedor principal */
+div {
+    background-color: white; /* Fondo blanco para resaltar el contenido */
+    padding: 20px; /* Añade espacio interno para un diseño más limpio */
+    width: 450px; /* Ancho fijo del contenedor */
+}
+
+/* Estilos para el encabezado y el párrafo */
+h1, p {
+    text-align: center; /* Centra el texto del encabezado y párrafo */
+    color: purple; /* Color púrpura para hacerlos destacar */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex; /* Flexbox para estructurar los elementos dentro del formulario */
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+/* Estilos para los campos de entrada y la caja de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="submit"],
+textarea {
+    margin-top: 10px; /* Espacio superior para separar cada campo */
+    margin-bottom: 10px; /* Espacio inferior entre campos */
+    padding: 10px; /* Relleno interno para una apariencia más cómoda */
+    border: 1px solid #b9b9b9; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados para suavizar el diseño */
+    resize: vertical; /* Permite que los usuarios ajusten la altura de la caja de texto */
+}
+
+/* Estilo específico para el botón de envío */
+input[type="submit"] {
+    background-color: #8e4489; /* Color de fondo púrpura para el botón */
+    color: white; /* Texto blanco para contraste */
+}
+
+/* Efecto hover para el botón de envío */
+input[type="submit"]:hover {
+    background-color: #7a3a76; /* Cambia el fondo a un tono más oscuro al pasar el cursor */
+}
+
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en una posición constante en la pantalla */
+    top: 10px; /* Coloca el logo con un margen superior */
+    left: 10px; /* Coloca el logo con un margen izquierdo */
+    z-index: 10; /* Asegura que el logo esté por encima de otros elementos */
+    display: flex; /* Flexbox para alinear internamente la imagen */
+    align-items: center; /* Centra verticalmente la imagen dentro del enlace */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura específica del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Suave transición para un efecto visual en hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Amplía el logo ligeramente al pasar el cursor */
+}

@@ -1,0 +1,104 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto limpia y legible */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    display: flex; /* Alinea el contenido en una columna central */
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+/* Estilo para el logo en la esquina superior izquierda */
+.logo {
+    position: fixed; /* Fija el logo en la pantalla para que siempre esté visible */
+    top: 20px; /* Lo coloca 20px desde la parte superior */
+    left: 20px; /* Lo coloca 20px desde el lado izquierdo */
+}
+
+.logo img {
+    width: 50px; /* Define el ancho del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Encabezado principal */
+h1 {
+    color: #333; /* Color de texto oscuro para mejor contraste */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos del formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 20px 30px; /* Espacio alrededor de los campos */
+    border-radius: 8px; /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar el formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Se ajusta al ancho de la pantalla en dispositivos pequeños */
+}
+
+/* Estilos de los labels */
+form label {
+    display: block; /* Coloca cada label en una línea propia */
+    margin-bottom: 5px; /* Espacio debajo del label */
+    color: #333; /* Color oscuro para mejor legibilidad */
+    font-weight: bold; /* Negrita para destacar los labels */
+    font-size: 14px; /* Tamaño moderado para los labels */
+}
+
+/* Estilos de los campos de entrada */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form select {
+    width: 100%; /* Campos ocupan todo el ancho del formulario */
+    padding: 8px; /* Espacio interno para comodidad de escritura */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto moderado */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilos para los botones */
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 10px 15px; /* Espacio interno en los botones */
+    font-size: 14px; /* Tamaño de fuente moderado */
+    color: white; /* Texto en blanco para contraste */
+    background-color: #4CAF50; /* Verde para el botón de envío */
+    border: none; /* Sin borde para un diseño limpio */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra un cursor de mano */
+    margin-right: 10px; /* Espacio entre los botones */
+    transition: background-color 0.3s; /* Transición suave en el color de fondo */
+}
+
+form input[type="reset"] {
+    background-color: #999; /* Gris para el botón de reset */
+}
+
+/* Hover para los botones */
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+form input[type="reset"]:hover {
+    background-color: #777; /* Color gris más oscuro al pasar el cursor */
+}
+
+/* Estilo para el checkbox y su label */
+form input[type="checkbox"] {
+    margin-right: 8px; /* Espacio a la derecha del checkbox */
+}
+
+form label[for="terms"] {
+    display: inline; /* Coloca el label en línea con el checkbox */
+    font-size: 14px; /* Tamaño moderado para el texto */
+    color: #333; /* Color oscuro para buena legibilidad */
+}
+
+/* Espaciado final para los saltos de línea */
+form br {
+    line-height: 1.5; /* Ajusta la altura de la línea para el espaciado */
+}

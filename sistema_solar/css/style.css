@@ -1,39 +1,61 @@
-/* Estilos  para la página */
+/* Estilos para la página */
 body {
-    font-family: Arial;
-    background-color: #d3d3d3;
-    display: flex;
-    justify-content: center;
+    font-family: Arial; /* Fuente principal de la página */
+    background-color: #d3d3d3; /* Fondo gris claro */
+    display: flex; /* Uso de flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
 }
 
 /* Estilo para el div principal */
 .principal {
-    max-width: 800px;
-    min-height: 900px;
-    padding: 20px;
-    background-color: #fff;
+    max-width: 800px; /* Ancho máximo para el contenedor principal */
+    min-height: 900px; /* Altura mínima del contenedor para evitar el desbordamiento */
+    padding: 20px; /* Espacio interno para separación */
+    background-color: #fff; /* Fondo blanco para contrastar con el fondo de la página */
 }
 
-/* Estilos para los encabezados */
+/* Estilos para los encabezados principales */
 h1 {
-    color: #2c3e50;
+    color: #2c3e50; /* Color azul oscuro para el título principal */
 }
 
 h2, h3 {
-    color: #34495e;
+    color: #34495e; /* Color ligeramente diferente para los subtítulos */
 }
 
 /* Imágenes */
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Estilo para enlaces */
 a {
-    text-decoration: none;
+    text-decoration: none; /* Elimina el subrayado en enlaces por defecto */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Añade subrayado al pasar el cursor sobre un enlace */
+}
+
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en la esquina superior izquierda */
+    top: 10px; /* Espacio desde el borde superior */
+    left: 10px; /* Espacio desde el borde izquierdo */
+    z-index: 1000; /* Coloca el logo por encima del contenido */
+    display: flex; /* Flexbox para alinear el logo internamente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura específica del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Añade una transición suave para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Agranda ligeramente el logo al pasar el cursor */
 }
