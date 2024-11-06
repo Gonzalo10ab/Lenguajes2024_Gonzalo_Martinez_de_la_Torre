@@ -1,0 +1,56 @@
+* {
+    font-family: Verdana;
+    font-size: 1.25rem;
+}
+
+td.blanco {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+
+}
+
+td.negro {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+}
+
+td.peon_negro {
+    background-image : url () ;
+    background-repeat: no—repeat ;
+    background-position : center ;
+    background-size : 65px 100px;
+}
+
+td.peon_blanco {
+    background-image : url () ;
+    background-repeat: no—repeat ;
+    background-position : center ;
+    background-size : 65px 100px;
+}
+
+table {
+    border-style: solid;
+    border-width: 1px;
+}
+
+th {
+    background-color: chocolate;
+    color: white;
+}
+
+.columna {
+    height: 100px;
+    width: 30px;
+}
+
+.fila {
+    height: 30px;
+    width: 100px;
+}
+
+#esquina {
+    height: 30px;
+    width: 30px;
+}
