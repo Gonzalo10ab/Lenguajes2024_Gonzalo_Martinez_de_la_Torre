@@ -47,28 +47,36 @@ header h1 {
 }
 
 
-table {
-    border-collapse: collapse;
-    margin: -23px auto;
+.container {
+    position: fixed; /* Posición fija en la ventana */
+    top: 53%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar el contenedor al centro */
+    width: 900px; /* Ancho fijo del tablero */
+    height: 900px; /* Alto fijo del tablero */
 }
 
-td {
+.cell, .border {
+    float: left; /* Alinear las celdas horizontalmente */
+    width: calc(900px / 9); /* Cada celda ocupa un noveno del ancho total */
+    height: calc(900px / 9); /* Cada celda ocupa un noveno del alto total */
+    text-align: center; /* Centrar el contenido horizontalmente */
+    line-height: calc(900px / 9); /* Centrar el contenido verticalmente */
+}
+
+.border {
     font-size: 1.5em;
-    text-align: center;
-    width: 100px;
-    height: 100px;
 }
 
 .white {
-    background-image: url(images/madera_blanca.jpg);
+    background-image: url(../images/madera_blanca.jpg);
 }
 
 .brown {
-    background-image: url(images/madera_oscura.png);
+    background-image: url(../images/madera_oscura.png);
 }
 
 img {
-    display: block;
     width: 100%;
     height: 100%;
 }

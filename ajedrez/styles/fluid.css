@@ -47,31 +47,46 @@ header h1 {
 }
 
 
-table {
-    border-collapse: collapse;
-    margin: -23px auto;
+.container {
+    width: 900px; /* Ancho total del tablero: 9 celdas de 100px */
+    height: 900px; /* Altura total del tablero: 9 celdas de 100px */
+    margin: -25px auto; /* Centrar el tablero horizontalmente y bajarlo */
+    overflow: hidden; /* Evitar desbordamientos debido a floats */
 }
 
-td {
-    font-size: 1.5em;
+.cell, .border {
+    float: left; /* Hacer que las celdas floten a la izquierda */
+    width: 100px; /* Ancho fijo de cada celda */
+    height: 100px; /* Altura fija de cada celda */
+    box-sizing: border-box; /* Incluir bordes y padding dentro del tamaño */
+}
+
+.border {
     text-align: center;
-    width: 100px;
-    height: 100px;
+    line-height: 100px; /* Centrar texto verticalmente */
+    font-size: 1.3em; /* Tamaño de fuente ajustado */
+    color: black; /* Color del texto */
 }
 
 .white {
-    background-image: url(images/madera_blanca.jpg);
+    background-image: url(../images/madera_blanca.jpg);
+    background-size: cover;
 }
 
 .brown {
-    background-image: url(images/madera_oscura.png);
+    background-image: url(../images/madera_oscura.png);
+    background-size: cover;
 }
 
 img {
-    display: block;
     width: 100%;
     height: 100%;
+    object-fit: contain; /* Ajustar imágenes sin distorsión */
 }
+
+
+
+
 
 /* Estilo para el enlace del logo */
 .logo {

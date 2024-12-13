@@ -4,109 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajedrez</title>
+    <link rel="icon" type="image/png" href="/web_semantica/images/logo.png">
+    <meta name="author" content="Gonzalo Martínez de la Torre">
+    <title>Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/web_semantica/images/logo.png" alt="Logo">
+        </a>
+        <h1>Tablero de Ajedrez Tablas</h1>
+        <nav class="header-nav">
+            <a href="index.html">Tablas</a>
+            <a href="content/ajedrez_fluid.html">Fluid</a>
+            <a href="content/ajedrez_fixed.html">Fixed</a>
+            <a href="content/ajedrez_flex.html">Flex</a>
+            <a href="content/ajedrez_grid.html">Grid</a>
+            <a href="content/ajedrez_responsive.html">Responsive</a>
+        </nav>
+    </header>
+
     <table>
         <tr>
-            <th id="esquina"></th>
-            <th class="fila">A</th>
-            <th class="fila">B</th>
-            <th class="fila">C</th>
-            <th class="fila">D</th>
-            <th class="fila">E</th>
-            <th class="fila">F</th>
-            <th class="fila">G</th>
-            <th class="fila">H</th>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
         </tr>
         <tr>
-            <th class="columna">1</th>
-            <td class="blanco" id="A1"></td>
-            <td class="negro" id="B1"></td>
-            <td class="blanco" id="C1"></td>
-            <td class="negro" id="D1"></td>
-            <td class="blanco" id="E1"></td>
-            <td class="negro" id="F1"></td>
-            <td class="blanco" id="G1"></td>
-            <td class="negro" id="H1"></td>
+            <td>8</td>
+            <td class="white"><img src="images/torreblanca.png" alt="Torre Blanca"></td>
+            <td class="brown"><img src="images/caballoblanca.png" alt="Caballo Blanco"></td>
+            <td class="white"><img src="images/alfilblanca.png" alt="Alfil Blanco"></td>
+            <td class="brown"><img src="images/reyblanca.png" alt="Rey Blanco"></td>
+            <td class="white"><img src="images/reinablanca.png" alt="Reina Blanca"></td>
+            <td class="brown"><img src="images/alfilblanca.png" alt="Alfil Blanco"></td>
+            <td class="white"><img src="images/caballoblanca.png" alt="Caballo Blanco"></td>
+            <td class="brown"><img src="images/torreblanca.png" alt="Torre Blanca"></td>
         </tr>
         <tr>
-            <th class="columna">2</th>
-            <td class="negro" id="A2"></td>
-            <td class="blanco" id="B2"></td>
-            <td class="negro" id="C2"></td>
-            <td class="blanco" id="D2"></td>
-            <td class="negro" id="E2"></td>
-            <td class="blanco" id="F2"></td>
-            <td class="negro" id="G2"></td>
-            <td class="blanco" id="H2"></td>
+            <td>7</td>
+            <td class="brown"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="white"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="brown"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="white"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="brown"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="white"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="brown"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
+            <td class="white"><img src="images/peonblanca.png" alt="Peón Blanco"></td>
         </tr>
         <tr>
-            <th class="columna">3</th>
-            <td class="blanco" id="A3"></td>
-            <td class="negro" id="B3"></td>
-            <td class="blanco" id="C3"></td>
-            <td class="negro" id="D3"></td>
-            <td class="blanco" id="E3"></td>
-            <td class="negro" id="F3"></td>
-            <td class="blanco" id="G3"></td>
-            <td class="negro" id="H3"></td>
+            <td>6</td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
         </tr>
         <tr>
-            <th class="columna">4</th>
-            <td class="negro" id="A4"></td>
-            <td class="blanco" id="B4"></td>
-            <td class="negro" id="C4"></td>
-            <td class="blanco" id="D4"></td>
-            <td class="negro" id="E4"></td>
-            <td class="blanco" id="F4"></td>
-            <td class="negro" id="G4"></td>
-            <td class="blanco" id="H4"></td>
+            <td>5</td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
         </tr>
         <tr>
-            <th class="columna">5</th>
-            <td class="blanco" id="A5"></td>
-            <td class="negro" id="B5"></td>
-            <td class="blanco" id="C5"></td>
-            <td class="negro" id="D5"></td>
-            <td class="blanco" id="E5"></td>
-            <td class="negro" id="F5"></td>
-            <td class="blanco" id="G5"></td>
-            <td class="negro" id="H5"></td>
+            <td>4</td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
         </tr>
         <tr>
-            <th class="columna">6</th>
-            <td class="negro" id="A6"></td>
-            <td class="blanco" id="B6"></td>
-            <td class="negro" id="C6"></td>
-            <td class="blanco" id="D6"></td>
-            <td class="negro" id="E6"></td>
-            <td class="blanco" id="F6"></td>
-            <td class="negro" id="G6"></td>
-            <td class="blanco" id="H6"></td>
+            <td>3</td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
+            <td class="brown"></td>
+            <td class="white"></td>
         </tr>
         <tr>
-            <th class="columna">7</th>
-            <td class="blanco" id="A7"></td>
-            <td class="negro" id="B7"></td>
-            <td class="blanco" id="C7"></td>
-            <td class="negro" id="D7"></td>
-            <td class="blanco" id="E7"></td>
-            <td class="negro" id="F7"></td>
-            <td class="blanco" id="G7"></td>
-            <td class="negro" id="H7"></td>
+            <td>2</td>
+            <td class="white"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="brown"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="white"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="brown"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="white"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="brown"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="white"><img src="images/peon.png" alt="Peón Negro"></td>
+            <td class="brown"><img src="images/peon.png" alt="Peón Negro"></td>
         </tr>
         <tr>
-            <th class="columna">8</th>
-            <td class="negro" id="A8"></td>
-            <td class="blanco" id="B8"></td>
-            <td class="negro" id="C8"></td>
-            <td class="blanco" id="D8"></td>
-            <td class="negro" id="E8"></td>
-            <td class="blanco" id="F8"></td>
-            <td class="negro" id="G8"></td>
-            <td class="blanco" id="H8"></td>
+            <td>1</td>
+            <td class="brown"><img src="images/torre.png" alt="Torre Negra"></td>
+            <td class="white"><img src="images/caballo.png" alt="Caballo Negro"></td>
+            <td class="brown"><img src="images/alfil.png" alt="Alfil Negro"></td>
+            <td class="white"><img src="images/rey.png" alt="Rey Negro"></td>
+            <td class="brown"><img src="images/reina.png" alt="Reina Negra"></td>
+            <td class="white"><img src="images/alfil.png" alt="Alfil Negro"></td>
+            <td class="brown"><img src="images/caballo.png" alt="Caballo Negro"></td>
+            <td class="white"><img src="images/torre.png" alt="Torre Negra"></td>
         </tr>
     </table>
 </body>

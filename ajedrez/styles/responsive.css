@@ -46,31 +46,41 @@ header h1 {
     transform: scale(1.1); /* Efecto de escalado en hover */
 }
 
-
-table {
-    border-collapse: collapse;
-    margin: -23px auto;
+.container {
+    display: grid; /* Usamos Grid para una distribución uniforme */
+    grid-template-columns: repeat(9, 1fr); /* Dividir en 9 columnas iguales */
+    grid-template-rows: repeat(9, 1fr); /* Dividir en 9 filas iguales */
+    width: 90vw; /* El tablero ocupará el 90% del ancho de la ventana */
+    max-width: 900px; /* Máximo tamaño del tablero */
+    aspect-ratio: 1 / 1; /* Mantener la proporción cuadrada */
+    margin: -23px auto; /* Centrar el tablero horizontalmente y añadir margen superior */
 }
 
-td {
+.cell, .border {
+    display: flex; /* Permite centrar contenido dentro de las celdas */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-size: calc(1vw + 10px); /* Ajustar tamaño del texto basado en el ancho de la ventana */
+    background-size: cover; /* Asegura que las texturas llenen las celdas */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño */
+}
+
+.border {
     font-size: 1.5em;
-    text-align: center;
-    width: 100px;
-    height: 100px;
 }
 
 .white {
-    background-image: url(images/madera_blanca.jpg);
+    background-image: url(../images/madera_blanca.jpg);
 }
 
 .brown {
-    background-image: url(images/madera_oscura.png);
+    background-image: url(../images/madera_oscura.png);
 }
 
 img {
-    display: block;
-    width: 100%;
+    width: 100%; /* Escala las imágenes al 90% del tamaño de la celda */
     height: 100%;
+    object-fit: contain; /* Ajusta las imágenes sin distorsión */
 }
 
 /* Estilo para el enlace del logo */
@@ -94,3 +104,5 @@ img {
 .logo:hover img {
     transform: scale(1.1); /* Agranda el logo ligeramente al pasar el cursor */
 }
+
+
