@@ -1,0 +1,26 @@
+.japon {
+    background-image: radial-gradient(circle, red 33%, white 33%, white);
+}
+
+.bangladesh {
+    background-image: radial-gradient(circle, red 33%, green 33%, green);
+}
+.palaos {
+    background-image: radial-gradient(circle, yellow 33%, blue 33%, blue);
+}
+.laos {
+    background-image: radial-gradient(circle, white 15%, blue 15%, blue);
+}
+.laos-arriba {
+    position: relative;
+    width: 100%;
+    height: 33%;
+    background-color: red;
+}
+.laos-abajo {
+    position: relative;
+    width: 100%;
+    height: 33%;
+    top:34% ;
+    background-color: red;
+}

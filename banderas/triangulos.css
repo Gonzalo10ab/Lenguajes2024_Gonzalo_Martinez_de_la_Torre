@@ -1,0 +1,58 @@
+.palestina {
+    background-image: linear-gradient(black 33%, white 33%, white 66.66%, green 66.66%);
+}
+
+.palestina .triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 80px solid red;
+}
+
+.che {
+    background-image: linear-gradient(white 50%, red 50%);
+}
+
+.che .triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 80px solid blue;
+}
+
+.bahamas {
+    background-image: linear-gradient(green 33%, yellow 33%, yellow 66.66%, green 66.66%);
+}
+
+.bahamas .triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 80px solid black;
+}
+
+.cuba {
+    position: relative;
+    background-image: linear-gradient(blue 20%,white 20%,white 40%,blue 40%,blue 60%,white 60%,white 80%,blue 80%,blue 100%);
+}
+
+.triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 80px solid red;
+}
+
+.cuba .estrella {
+    position: absolute;
+    background-color: white;
+    left: 10%;
+}
