@@ -2,39 +2,59 @@
   height: 100%;
   margin: 0;
 }
-  
-  div.azul {
-    background-color: blue;
-    width: 100%;
-    height: 10%;
-  }
-  
-  div.rojo {
-    background-color: red;
-    width: 20%;
-    height: 80%;
-    float: left;
-  }
-  
-  div.verde {
-    background-color: green;
-    width: 40%;
-    height: 80%;
-    float: right;
-  }
-  
-  div.amarillo {
-    background-color: yellow;
-    width: 40%;
-    height: 80%;
-    float: right;
-  }
 
-  div.naranja {
-    background-color: orange;
-    width: 100%;
-    height: 10%;
-    clear: both;
-  }
-  
-  
+div.azul {
+  background-color: blue;
+  width: 100%;
+  height: 10%;
+}
+
+div.rojo {
+  background-color: red;
+  width: 20%;
+  height: 80%;
+  float: left;
+}
+
+div.verde {
+  background-color: green;
+  width: 40%;
+  height: 80%;
+  float: right;
+}
+
+div.amarillo {
+  background-color: yellow;
+  width: 40%;
+  height: 80%;
+  float: right;
+}
+
+div.naranja {
+  background-color: orange;
+  width: 100%;
+  height: 10%;
+  clear: both;
+}
+
+/* Estilo para el enlace del logo */
+.logo {
+  position: fixed; /* Fija el logo en la esquina, visible siempre en la pantalla */
+  top: 25px; /* Espacio desde el borde superior */
+  left: 10px; /* Espacio desde el borde izquierdo */
+  z-index: 10; /* Asegura que el logo esté encima del resto del contenido */
+  display: flex; /* Alinea la imagen dentro del enlace */
+  align-items: flex-start; /* Centra la imagen verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+  height: 60px; /* Altura del logo */
+  width: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease; /* Añade una transición para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+  transform: scale(1.1); /* Agranda el logo ligeramente al pasar el cursor */
+}

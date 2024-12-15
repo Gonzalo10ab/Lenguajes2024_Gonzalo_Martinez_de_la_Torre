@@ -66,3 +66,25 @@ footer {
     justify-content: center;
     text-align: center;
 }
+
+/* Estilo para el enlace del logo */
+.logo {
+    position: fixed; /* Fija el logo en la esquina, visible siempre en la pantalla */
+    top: 10px; /* Espacio desde el borde superior */
+    left: 10px; /* Espacio desde el borde izquierdo */
+    z-index: 10; /* Asegura que el logo esté encima del resto del contenido */
+    display: flex; /* Alinea la imagen dentro del enlace */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    height: 60px; /* Altura del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Añade una transición para el efecto hover */
+}
+
+/* Efecto hover en el logo */
+.logo:hover img {
+    transform: scale(1.1); /* Agranda el logo ligeramente al pasar el cursor */
+}
