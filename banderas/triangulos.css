@@ -1,5 +1,5 @@
 .palestina {
-    background-image: linear-gradient(black 33%, white 33%, white 66.66%, green 66.66%);
+    background-image: linear-gradient(rgb(0, 0, 0) 33%, rgb(255, 255, 255) 33%, rgb(255, 255, 255) 66.66%, rgb(0, 122, 61) 66.66%);
 }
 
 .palestina .triangulo {
@@ -8,11 +8,11 @@
     height: 0;
     border-top: 75px solid transparent;
     border-bottom: 70px solid transparent;
-    border-left: 80px solid red;
+    border-left: 80px solid rgb(206, 17, 38);
 }
 
 .che {
-    background-image: linear-gradient(white 50%, red 50%);
+    background-image: linear-gradient(rgb(255, 255, 255) 50%, rgb(206, 17, 38) 50%);
 }
 
 .che .triangulo {
@@ -21,11 +21,11 @@
     height: 0;
     border-top: 75px solid transparent;
     border-bottom: 70px solid transparent;
-    border-left: 80px solid blue;
+    border-left: 80px solid rgb(0, 56, 168);
 }
 
 .bahamas {
-    background-image: linear-gradient(green 33%, yellow 33%, yellow 66.66%, green 66.66%);
+    background-image: linear-gradient(rgb(0, 122, 61) 33%, rgb(255, 209, 22) 33%, rgb(255, 209, 22) 66.66%, rgb(0, 122, 61) 66.66%);
 }
 
 .bahamas .triangulo {
@@ -34,12 +34,12 @@
     height: 0;
     border-top: 75px solid transparent;
     border-bottom: 70px solid transparent;
-    border-left: 80px solid black;
+    border-left: 80px solid rgb(0, 0, 0);
 }
 
 .cuba {
     position: relative;
-    background-image: linear-gradient(blue 20%,white 20%,white 40%,blue 40%,blue 60%,white 60%,white 80%,blue 80%,blue 100%);
+    background-image: linear-gradient(rgb(0, 56, 168) 20%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 40%, rgb(0, 56, 168) 40%, rgb(0, 56, 168) 60%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 80%, rgb(0, 56, 168) 80%, rgb(0, 56, 168) 100%);
 }
 
 .triangulo {
@@ -48,11 +48,11 @@
     height: 0;
     border-top: 75px solid transparent;
     border-bottom: 70px solid transparent;
-    border-left: 80px solid red;
+    border-left: 80px solid rgb(206, 17, 38);
 }
 
 .cuba .estrella {
     position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     left: 10%;
 }

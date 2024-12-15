@@ -3,19 +3,19 @@
 }
 
 .franja {
-    background-color: red;
+    background-color: rgb(179, 25, 66);
     height: calc(150px / 13);
 }
 
 .franja2 {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .eeuu-estrellas {
     position: absolute;
     width: 35%;
     height: calc((150px / 13) * 7);
-    background-color: darkblue;
+    background-color: rgb(10, 49, 97);
 }
 
 .estrellas-fila {
@@ -29,13 +29,13 @@
 
 .estrellas {
     font-size: 7px;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 }
 
 .ue {
-    background-color: blue;
+    background-color: rgb(0, 51, 153);
 }
 
 .circulo {
@@ -50,7 +50,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: yellow;
+    background-color: rgb(255, 204, 0);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     transform-origin: 50% 50%;
 }
@@ -64,23 +64,23 @@
 }
 
 .ue-estrella:nth-child(3) {
-    transform: rotate(51.42deg) translateY(-60px);
+    transform: rotate(51deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(4) {
-    transform: rotate(77.14deg) translateY(-60px);
+    transform: rotate(77deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(5) {
-    transform: rotate(102.85deg) translateY(-60px);
+    transform: rotate(102deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(6) {
-    transform: rotate(128.57deg) translateY(-60px);
+    transform: rotate(128deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(7) {
-    transform: rotate(154.28deg) translateY(-60px);
+    transform: rotate(154deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(8) {
@@ -88,27 +88,26 @@
 }
 
 .ue-estrella:nth-child(9) {
-    transform: rotate(205.71deg) translateY(-60px);
+    transform: rotate(205deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(10) {
-    transform: rotate(231.42deg) translateY(-60px);
+    transform: rotate(231deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(11) {
-    transform: rotate(257.14deg) translateY(-60px);
+    transform: rotate(257deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(12) {
-    transform: rotate(282.85deg) translateY(-60px);
+    transform: rotate(282deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(13) {
-    transform: rotate(308.57deg) translateY(-60px);
+    transform: rotate(308deg) translateY(-60px);
 }
 
 .ue-estrella:nth-child(14) {
-    transform: rotate(334.28deg) translateY(-60px);
+    transform: rotate(334deg) translateY(-60px);
 }
-
 

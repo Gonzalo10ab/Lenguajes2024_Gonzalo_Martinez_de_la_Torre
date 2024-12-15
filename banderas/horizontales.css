@@ -1,39 +1,39 @@
 .colombia {
-    background-image: linear-gradient(yellow 33%, blue 33%, blue 66.66%, red 66.66%);
+    background-image: linear-gradient(rgb(255, 223, 0) 33%, rgb(0, 56, 168) 33%, rgb(0, 56, 168) 66.66%, rgb(206, 17, 38) 66.66%);
 }
 
 .alemania {
-    background-image: linear-gradient(black 33%, red 33%, red 66.66%, yellow 66.66%);
+    background-image: linear-gradient(rgb(0, 0, 0) 33%, rgb(206, 17, 38) 33%, rgb(206, 17, 38) 66.66%, rgb(255, 206, 0) 66.66%);
 }
 
 .polonia {
-    background-image: linear-gradient(white 50%, red 50%, red);
+    background-image: linear-gradient(rgb(255, 255, 255) 50%, rgb(206, 17, 38) 50%, rgb(206, 17, 38));
 }
 
 .gabon {
-    background-image: linear-gradient(green 33%, yellow 33%, yellow 66.66%, blue 66.66%);
+    background-image: linear-gradient(rgb(0, 138, 62) 33%, rgb(255, 223, 0) 33%, rgb(255, 223, 0) 66.66%, rgb(0, 56, 168) 66.66%);
 }
 
 .austria {
-    background-image: linear-gradient(red 33%, white 33%, white 66.66%, red 33.33%);
+    background-image: linear-gradient(rgb(206, 17, 38) 33%, rgb(255, 255, 255) 33%, rgb(255, 255, 255) 66.66%, rgb(206, 17, 38) 66.66%);
 }
 
 .ucrania {
-    background-image: linear-gradient(yellow 50%, blue 50%);
+    background-image: linear-gradient(rgb(255, 223, 0) 50%, rgb(0, 56, 168) 50%);
 }
 
 .espana {
-    background-image: linear-gradient(red 33%, yellow 33%, yellow 66.66%, red 66.66%);
+    background-image: linear-gradient(rgb(206, 17, 38) 33%, rgb(255, 223, 0) 33%, rgb(255, 223, 0) 66.66%, rgb(206, 17, 38) 66.66%);
 }
 
 .holanda {
-    background-image: linear-gradient(red 33%, white 33%, white 66.66%, blue 66.66%);
+    background-image: linear-gradient(rgb(206, 17, 38) 33%, rgb(255, 255, 255) 33%, rgb(255, 255, 255) 66.66%, rgb(0, 56, 168) 66.66%);
 }
 
 .indonesia {
-    background-image: linear-gradient(red 50%, white 50%, white);
+    background-image: linear-gradient(rgb(206, 17, 38) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255));
 }
 
 .rusia {
-    background-image: linear-gradient(white 33.33%, blue 33.33%, blue 66.66%, red 33.33%);
+    background-image: linear-gradient(rgb(255, 255, 255) 33.33%, rgb(0, 56, 168) 33.33%, rgb(0, 56, 168) 66.66%, rgb(206, 17, 38) 66.66%);
 }
