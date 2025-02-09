@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dni SYSTEM "../dtd/ejercicio4.dtd">
+<dni id="D001">
+    <numero>12345678X</numero>
+    <nombre>Zacarias</nombre>
+    <apellidos>Flores del Campo</apellidos>
+    <fecha_nacimiento>15-07-1990</fecha_nacimiento>
+    <lugar_nacimiento>París</lugar_nacimiento>
+    <nacionalidad>Española</nacionalidad>
+    <sexo>M</sexo>
+    <direccion>
+        <calle>Nose que poner 21</calle>
+        <ciudad>Suiza</ciudad>
+        <codigo_postal>28013</codigo_postal>
+        <provincia>Madrid</provincia>
+    </direccion>
+    <fecha_expedicion>10-05-2020</fecha_expedicion>
+    <fecha_caducidad>10-05-2030</fecha_caducidad>
+    <equipo_emisor>01234567</equipo_emisor>
+</dni>

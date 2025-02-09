@@ -1,0 +1,10 @@
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre, telefono, email?, direccion?, notas?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT notas (#PCDATA)>
+
+<!ATTLIST contacto id ID #REQUIRED>
+<!ATTLIST contacto tipo (personal|trabajo|emergencia) "personal">

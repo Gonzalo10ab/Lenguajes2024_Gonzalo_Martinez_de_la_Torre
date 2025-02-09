@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resumenenes.css" rel="stylesheet">
+    <title>Resumen de XML</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Resumen de Transformaciones XSLT</h1>
+            <p>Es un estandar de la organización W3C que presenta una forma de transformar documentos XML</p>
+        </header>
+
+        <section>
+            <h2>¿Qué es XSLT?</h2>
+            <p>XSLT (eXtensible Stylesheet Language Transformations) es un lenguaje basado en XML que permite transformar documentos XML en otros formatos como HTML, XML o texto plano.</p>
+            <p>Las transformaciones pueden ser visuales y estructurales, facilitando la conversión de un documento XML en otro tipo de documento mediante el uso de patrones y reglas.</p>
+        </section>
+        
+        <section>
+            <h2>Elementos Clave de XSLT</h2>
+            <ul>
+                <li><strong>&lt;xsl:stylesheet&gt;</strong>: Define el inicio de un documento XSLT.</li>
+                <li><strong>&lt;xsl:template&gt;</strong>: Contiene reglas de transformación.</li>
+                <li><strong>&lt;xsl:apply-templates&gt;</strong>: Aplica plantillas a elementos coincidentes.</li>
+                <li><strong>&lt;xsl:value-of&gt;</strong>: Extrae el contenido de un nodo.</li>
+                <li><strong>&lt;xsl:for-each&gt;</strong>: Itera sobre un conjunto de nodos.</li>
+                <li><strong>&lt;xsl:choose&gt;</strong>: Define condiciones mediante &lt;xsl:when&gt; y &lt;xsl:otherwise&gt;.</li>
+                <li><strong>&lt;xsl:output&gt;</strong>: Indica el formato del documento de salida (XML, HTML, texto).</li>
+                <li><strong>&lt;xsl:sort&gt;</strong>: Ordena los resultados dentro de una estructura iterativa.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Proceso de Transformación en XSLT</h2>
+            <p>El procesador XSLT analiza el documento XML y construye un árbol de documentos. Luego, recorre el árbol desde la raíz y aplica las plantillas definidas en el XSLT. Si se encuentra una coincidencia con un nodo, se aplica la transformación correspondiente.</p>
+        </section>
+        
+        <section>
+            <h2>Ejemplo de Transformación XSLT</h2>
+            <p>Este es un ejemplo básico de cómo transformar un XML en HTML utilizando XSLT:</p>
+            <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;
+    &lt;xsl:template match="/"&gt;
+        &lt;html&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Listado de Pokémon&lt;/h1&gt;
+                &lt;xsl:for-each select="pokeDAW/pokemon"&gt;
+                    &lt;p&gt;&lt;xsl:value-of select="nombre"/&gt; - Tipo: &lt;xsl:value-of select="@tipo"/&gt;&lt;/p&gt;
+                &lt;/xsl:for-each&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>Aplicaciones de XSLT</h2>
+            <p>Algunas aplicaciones comunes de XSLT incluyen:</p>
+            <ul>
+                <li>Transformación de datos XML en HTML para su visualización web.</li>
+                <li>Generación de informes a partir de bases de datos XML.</li>
+                <li>Integración de sistemas mediante conversión de formatos XML.</li>
+                <li>Formato avanzado de documentos XML mediante XSL-FO para la generación de archivos PDF, SVG o RTF.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Herramientas para Trabajar con XSLT</h2>
+            <p>Existen varias herramientas para desarrollar y probar transformaciones XSLT:</p>
+            <ul>
+                <li><strong>Oxygen XML Editor</strong>: Editor avanzado para trabajar con XML y XSLT.</li>
+                <li><strong>Altova XMLSpy</strong>: Herramienta de desarrollo XML con soporte para XSLT.</li>
+                <li><strong>Saxon</strong>: Procesador XSLT open-source.</li>
+                <li><strong>Xalan</strong>: Procesador XSLT de código abierto.</li>
+            </ul>
+        </section>
+
+
+        <footer>
+            <p>Trabajo de clase - Gonzalo Martínez de la Torre</p>
+        </footer>
+</body>
+
+</html>

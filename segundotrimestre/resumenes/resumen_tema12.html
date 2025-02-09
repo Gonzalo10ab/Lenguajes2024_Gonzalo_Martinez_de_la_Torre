@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resumenenes.css" rel="stylesheet">
+    <title>Resumen de XML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Resumen de XPath y XML</h1>
+        <p>XPath es un lenguaje que permite la navegación y selección de nodos en documentos XML.</p>
+    </header>
+
+    <section>
+        <h2>¿Qué es XPath?</h2>
+        <p>XPath es un lenguaje de consulta para seleccionar nodos dentro de documentos XML basado en una estructura
+            jerárquica.</p>
+        <p>Se usa ampliamente en combinación con tecnologías como XSLT y XQuery para manipular y transformar documentos
+            XML.</p>
+    </section>
+
+    <section>
+        <h2>Tipos de nodos en XPath</h2>
+        <p>XPath trabaja con diferentes tipos de nodos en un documento XML:</p>
+        <ul>
+            <li><strong>Raíz:</strong> Representa el nodo raíz del documento, indicado con <code>/</code>.</li>
+            <li><strong>Elemento:</strong> Cualquier etiqueta XML en el documento.</li>
+            <li><strong>Atributo:</strong> Información asociada a un elemento, representada con
+                <code>@nombre_atributo</code>.</li>
+            <li><strong>Texto:</strong> Contenido dentro de un elemento.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Expresiones XPath</h2>
+        <p>Algunas expresiones XPath comunes para seleccionar nodos:</p>
+        <ul>
+            <li><code>/concesionario/coche</code> - Selecciona todos los coches dentro del concesionario.</li>
+            <li><code>//coche</code> - Selecciona todos los coches en el documento, sin importar su ubicación.</li>
+            <li><code>//coche[@matricula="8280KWT"]</code> - Encuentra el coche con la matrícula 8280KWT.</li>
+            <li><code>//coche[2]</code> - Selecciona el segundo coche del documento.</li>
+            <li><code>//coche[precio>20000]/marca</code> - Obtiene la marca de los coches con precio superior a 20,000.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Funciones en XPath</h2>
+        <p>XPath permite realizar funciones sobre nodos y atributos:</p>
+        <ul>
+            <li><code>count(//coche)</code> - Cuenta el número de coches en el documento.</li>
+            <li><code>contains(text(), "Azul")</code> - Verifica si un nodo de texto contiene la palabra "Azul".</li>
+            <li><code>starts-with(@matricula, "82")</code> - Encuentra los coches cuya matrícula comienza con "82".</li>
+            <li><code>last()</code> - Selecciona el último elemento dentro de un conjunto de nodos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ejemplo XML con XPath</h2>
+        <pre>
+&lt;concesionario&gt;
+    &lt;coche matricula="6732KPC"&gt;
+        &lt;marca&gt;Seat Ateca&lt;/marca&gt;
+        &lt;combustible&gt;Gasolina&lt;/combustible&gt;
+        &lt;precio&gt;23000&lt;/precio&gt;
+    &lt;/coche&gt;
+    &lt;coche matricula="8280KWT"&gt;
+        &lt;marca&gt;Volkswagen Golf&lt;/marca&gt;
+        &lt;combustible&gt;Diesel&lt;/combustible&gt;
+        &lt;precio&gt;25000&lt;/precio&gt;
+    &lt;/coche&gt;
+&lt;/concesionario&gt;
+        </pre>
+        <p>Consultas XPath sobre este XML:</p>
+        <ul>
+            <li><code>//coche[@matricula="6732KPC"]/marca</code> - Devuelve "Seat Ateca".</li>
+            <li><code>//coche[combustible="Gasolina"]</code> - Selecciona coches con combustible gasolina.</li>
+            <li><code>count(//coche)</code> - Cuenta el número total de coches.</li>
+        </ul>
+    </section>
+
+
+    <footer>
+        <p>Trabajo de clase - Gonzalo Martínez de la Torre</p>
+    </footer>
+</body>
+
+</html>

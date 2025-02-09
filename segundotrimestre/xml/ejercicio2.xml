@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "../dtd/ejercicio2.dtd">
+<agenda>
+    <contacto id="C001" tipo="personal">
+        <nombre>Alex Cremento</nombre>
+        <telefono>600123456</telefono>
+        <email>alex.cremento@example.com</email>
+        <direccion>Calle Desengaño 21, Madrid</direccion>
+        <notas>Le encanta el perfuem y siempre llega cuando menos lo esperas.</notas>
+    </contacto>
+    
+    <contacto id="C002" tipo="trabajo">
+        <nombre>Dolores Delano</nombre>
+        <telefono>911223344</telefono>
+        <email>d.dolores@seguridad.com</email>
+        <direccion>Narnia, Córdoba</direccion>
+    </contacto>
+    
+    <contacto id="C003" tipo="emergencia">
+        <nombre>Tío Pepe</nombre>
+        <telefono>112</telefono>
+        <notas>No importa la hora, siempre responde.</notas>
+    </contacto>
+</agenda>

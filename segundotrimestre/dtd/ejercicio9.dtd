@@ -1,0 +1,17 @@
+<!ELEMENT pokedawn (pokemon+)>
+<!ELEMENT pokemon (nombre, numeroPokedex, imagen, descripcion, tipo, genero, estado)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numeroPokedex (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ATTLIST tipo categoria (agua|fuego|tierra) #REQUIRED>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT estado (habilidades, destreza, fuerza, faseEvolucion?, puntosVida?)>
+<!ELEMENT habilidades (#PCDATA)>
+<!ELEMENT destreza (#PCDATA)>
+<!ATTLIST destreza nivel CDATA #REQUIRED>
+<!ELEMENT fuerza (#PCDATA)>
+<!ATTLIST fuerza valor CDATA #REQUIRED>
+<!ELEMENT faseEvolucion (#PCDATA)>
+<!ELEMENT puntosVida (#PCDATA)>

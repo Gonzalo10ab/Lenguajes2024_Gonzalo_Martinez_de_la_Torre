@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="configuracion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="informacion" type="informacionType"/>
+                <xs:element name="base_datos" type="baseDatosType"/>
+                <xs:element name="usuario" type="usuarioType"/>
+                <xs:element name="parametros" type="parametrosType"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="informacionType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="version" type="xs:string"/>
+            <xs:element name="autor" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="baseDatosType">
+        <xs:sequence>
+            <xs:element name="host" type="xs:string"/>
+            <xs:element name="puerto" type="xs:integer"/>
+            <xs:element name="usuario_bd" type="xs:string"/>
+            <xs:element name="contrasena" type="xs:string"/>
+            <xs:element name="nombre_bd" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="usuarioType">
+        <xs:sequence>
+            <xs:element name="tema" type="xs:string"/>
+            <xs:element name="idioma" type="xs:string"/>
+            <xs:element name="preferencias" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="parametrosType">
+        <xs:sequence>
+            <xs:element name="clave" type="xs:string"/>
+            <xs:element name="valor" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

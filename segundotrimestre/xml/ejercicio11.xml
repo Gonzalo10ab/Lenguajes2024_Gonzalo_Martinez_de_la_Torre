@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda SYSTEM "../dtd/ejercicio11.dtd">
+<tienda>
+    <producto id="P001" descuento="10%">
+        <nombre>Gafas de Realidad Virtual ImmersaX</nombre>
+        <descripcion>Experimenta mundos virtuales con la mejor calidad de imagen y sin latencia.</descripcion>
+        <categoria>Electrónica</categoria>
+        <precio>299,99</precio>
+        <stock>15</stock>
+        <valoraciones>
+            <valoracion>
+                <usuario>GamerPro99</usuario>
+                <puntuacion>5</puntuacion>
+                <comentario>¡Una experiencia increíble, totalmente inmersiva!</comentario>
+            </valoracion>
+            <valoracion>
+                <usuario>VRFanatic</usuario>
+                <puntuacion>4</puntuacion>
+                <comentario>Muy buenas, pero un poco pesadas tras varias horas de uso.</comentario>
+            </valoracion>
+        </valoraciones>
+    </producto>
+    
+    <producto id="P002">
+        <nombre>Smartwatch UltraFit 3000</nombre>
+        <descripcion>Reloj inteligente con monitor de salud, GPS y resistencia al agua.</descripcion>
+        <categoria>Wearables</categoria>
+        <precio>199,99</precio>
+        <stock>30</stock>
+    </producto>
+    
+    <producto id="P003" descuento="15%">
+        <nombre>Mochila Antirrobo TechGuard</nombre>
+        <descripcion>Diseño moderno con compartimentos ocultos y puerto USB integrado.</descripcion>
+        <categoria>Accesorios</categoria>
+        <precio>49,99</precio>
+        <stock>20</stock>
+        <valoraciones>
+            <valoracion>
+                <usuario>JuanitoViajero</usuario>
+                <puntuacion>5</puntuacion>
+                <comentario>Ideal para viajar, súper segura y cómoda.</comentario>
+            </valoracion>
+        </valoraciones>
+    </producto>
+</tienda>

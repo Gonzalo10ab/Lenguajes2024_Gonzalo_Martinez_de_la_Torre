@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "../dtd/ejercicio3.dtd">
+<menu>
+    <categoria tipo="entrante">
+        <nombre>Aperitivos</nombre>
+        <plato id="P001" vegetariano="si">
+            <nombre>Bruschetta al estilo del chef</nombre>
+            <descripcion>Pan crujiente con tomate, albahaca y aceite de oliva.</descripcion>
+            <precio>6,50</precio>
+        </plato>
+        <plato id="P002">
+            <nombre>Calamares a la romana</nombre>
+            <descripcion>Aros de calamar rebozados y fritos, servidos con alioli.</descripcion>
+            <precio>9,99</precio>
+        </plato>
+    </categoria>
+    
+    <categoria tipo="principal">
+        <nombre>Platos Fuertes</nombre>
+        <plato id="P003">
+            <nombre>Solomillo en salsa de trufas</nombre>
+            <descripcion>Carne de solomillo con una cremosa salsa de trufas y setas.</descripcion>
+            <precio>24,90</precio>
+            <especialidad>Recomendado por el chef</especialidad>
+        </plato>
+    </categoria>
+    
+    <categoria tipo="postre">
+        <nombre>Dulces Tentaciones</nombre>
+        <plato id="P004" vegetariano="si">
+            <nombre>Tarta de queso con frutos rojos</nombre>
+            <descripcion>Cremosa tarta de queso con cobertura de frutos rojos.</descripcion>
+            <precio>5,95</precio>
+        </plato>
+    </categoria>
+</menu>

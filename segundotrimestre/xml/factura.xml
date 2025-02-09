@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="F2025001">
+    <emisor>
+        <nombre>Librería Pérez</nombre>
+        <cif>44555666B</cif>
+        <telefono>777888999</telefono>
+    </emisor>
+    <cliente>
+        <nombre>Biblioteca Txantrea</nombre>
+        <cif>33111222A</cif>
+        <telefono>333999444</telefono>
+    </cliente>
+    <detalles>
+        <articulo codigo="AW7" tipo="Libro" importe="30">
+            <descripcion>"Analítica Web 2.0"</descripcion>
+            <oferta>Si</oferta>
+            <cantidad>1</cantidad>
+            <pvp>29,99</pvp>
+        </articulo>
+        <articulo codigo="CP5" tipo="DVD" importe="30">
+            <descripcion>"Curso de HTML"</descripcion>
+            <cantidad>2</cantidad>
+            <oferta>No</oferta>
+            <pvp>30</pvp>
+        </articulo>
+    </detalles>
+    <total>85</total>
+</factura>

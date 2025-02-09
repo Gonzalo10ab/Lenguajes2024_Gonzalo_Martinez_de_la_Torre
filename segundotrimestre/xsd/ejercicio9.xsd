@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="pokedawn">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pokemon" type="pokemonType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="pokemonType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="numeroPokedex" type="xs:integer"/>
+            <xs:element name="imagen" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="tipo" type="tipoType"/>
+            <xs:element name="genero" type="xs:string"/>
+            <xs:element name="estado" type="estadoType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="categoria">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="agua"/>
+                            <xs:enumeration value="fuego"/>
+                            <xs:enumeration value="tierra"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="estadoType">
+        <xs:sequence>
+            <xs:element name="habilidades" type="xs:string"/>
+            <xs:element name="destreza" type="destrezaType"/>
+            <xs:element name="fuerza" type="fuerzaType"/>
+            <xs:element name="faseEvolucion" type="xs:string" minOccurs="0"/>
+            <xs:element name="puntosVida" type="xs:integer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="destrezaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="nivel" type="xs:integer" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="fuerzaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="valor" type="xs:integer" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

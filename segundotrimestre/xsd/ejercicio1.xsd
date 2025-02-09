@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" type="libroType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="libroType">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="autor" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="editorial" type="xs:string" minOccurs="0"/>
+            <xs:element name="publicacion" type="xs:string"/>
+            <xs:element name="genero" type="xs:string"/>
+            <xs:element name="paginas" type="xs:integer"/>
+            <xs:element name="precio" type="xs:decimal"/>
+            <xs:element name="reseña" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="idioma" type="xs:string" use="optional"/>
+        <xs:attribute name="bestseller">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="si"/>
+                    <xs:enumeration value="no"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+</xs:schema>

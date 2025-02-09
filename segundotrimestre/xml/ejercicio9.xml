@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pokedawn SYSTEM "../dtd/ejercicio9.dtd">
+<pokedawn>
+    <pokemon>
+        <nombre>Flamizard</nombre>
+        <numeroPokedex>999</numeroPokedex>
+        <imagen>flamizard.png</imagen>
+        <descripcion>Un dragón de fuego con la capacidad de lanzar llamaradas a 2000°C.</descripcion>
+        <tipo categoria="fuego">Fuego</tipo>
+        <genero>Macho</genero>
+        <estado>
+            <habilidades>Llamarada, Vuelo Ígneo</habilidades>
+            <destreza nivel="9">9</destreza>
+            <fuerza valor="95">95</fuerza>
+            <faseEvolucion>Final</faseEvolucion>
+            <puntosVida>300</puntosVida>
+        </estado>
+    </pokemon>
+    
+    <pokemon>
+        <nombre>Aquarion</nombre>
+        <numeroPokedex>1000</numeroPokedex>
+        <imagen>aquarion.png</imagen>
+        <descripcion>Una criatura marina con tentáculos capaces de generar tormentas.</descripcion>
+        <tipo categoria="agua">Agua</tipo>
+        <genero>Hembra</genero>
+        <estado>
+            <habilidades>Tormenta Oceánica, Hidropulso</habilidades>
+            <destreza nivel="8">8</destreza>
+            <fuerza valor="85">85</fuerza>
+            <faseEvolucion>Media</faseEvolucion>
+        </estado>
+    </pokemon>
+
+    <pokemon>
+        <nombre>Terramole</nombre>
+        <numeroPokedex>1001</numeroPokedex>
+        <imagen>terramole.png</imagen>
+        <descripcion>Un topo gigante con garras de acero que excava a gran velocidad.</descripcion>
+        <tipo categoria="tierra">Tierra</tipo>
+        <genero>Indeterminado</genero>
+        <estado>
+            <habilidades>Excavación Sísmica, Rugido Terrestre</habilidades>
+            <destreza nivel="7">7</destreza>
+            <fuerza valor="90">90</fuerza>
+            <puntosVida>280</puntosVida>
+        </estado>
+    </pokemon>
+</pokedawn>

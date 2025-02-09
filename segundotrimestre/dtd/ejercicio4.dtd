@@ -1,0 +1,18 @@
+<!ELEMENT dni (numero, nombre, apellidos, fecha_nacimiento, lugar_nacimiento, nacionalidad, sexo, direccion, fecha_expedicion, fecha_caducidad, equipo_emisor)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT lugar_nacimiento (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT direccion (calle, ciudad, codigo_postal, provincia)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT fecha_expedicion (#PCDATA)>
+<!ELEMENT fecha_caducidad (#PCDATA)>
+<!ELEMENT equipo_emisor (#PCDATA)>
+
+<!ATTLIST dni id ID #REQUIRED>

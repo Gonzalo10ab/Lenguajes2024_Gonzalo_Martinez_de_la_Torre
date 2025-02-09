@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE notas SYSTEM "../dtd/ejercicio8.dtd">
+<notas>
+    <alumno id="A001">
+        <nombre>Matías</nombre>
+        <apellidos>Queroso</apellidos>
+        <curso>DAWN1</curso>
+        <asignaturas>
+            <asignatura>
+                <nombre>Programación</nombre>
+                <trimestre1>8</trimestre1>
+                <trimestre2>7</trimestre2>
+                <trimestre3>9</trimestre3>
+                <final>8</final>
+            </asignatura>
+            <asignatura>
+                <nombre>Base de Datos</nombre>
+                <trimestre1>7</trimestre1>
+                <trimestre2>6</trimestre2>
+                <trimestre3>8</trimestre3>
+                <final>7</final>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno id="A002">
+        <nombre>Gonzalo</nombre>
+        <apellidos>Martínez de la Torre</apellidos>
+        <curso>DAWN2</curso>
+        <asignaturas>
+            <asignatura>
+                <nombre>Sistemas Informáticos</nombre>
+                <trimestre1>10</trimestre1>
+                <trimestre2>10</trimestre2>
+                <trimestre3>10</trimestre3>
+                <final>10</final>
+            </asignatura>
+            <asignatura>
+                <nombre>Lenguajes de Marcas</nombre>
+                <trimestre1>10</trimestre1>
+                <trimestre2>10</trimestre2>
+                <trimestre3>10</trimestre3>
+                <final>10</final>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno id="A003">
+        <nombre>Armando</nombre>
+        <apellidos>Casitas</apellidos>
+        <curso>DAWN1</curso>
+        <asignaturas>
+            <asignatura>
+                <nombre>Lenguajes de Marcas</nombre>
+                <trimestre1>7</trimestre1>
+                <trimestre2>8</trimestre2>
+                <trimestre3>7</trimestre3>
+                <final>7</final>
+            </asignatura>
+            <asignatura>
+                <nombre>Entornos de Desarrollo</nombre>
+                <trimestre1>6</trimestre1>
+                <trimestre2>7</trimestre2>
+                <trimestre3>8</trimestre3>
+                <final>7</final>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+</notas>

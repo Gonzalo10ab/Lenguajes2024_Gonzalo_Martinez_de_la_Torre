@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE estacion_meteorologica SYSTEM "../dtd/ejercicio10.dtd">
+<estacion_meteorologica>
+    <registro>
+        <ubicacion id="E001">Córdoba, España</ubicacion>
+        <fecha>2025-02-09</fecha>
+        <hora>14:30</hora>
+        <temperatura>18.5</temperatura>
+        <humedad>60%</humedad>
+        <presion>1013 hPa</presion>
+        <viento>
+            <direccion>Noroeste</direccion>
+            <velocidad>15 km/h</velocidad>
+        </viento>
+        <lluvia>0 mm</lluvia>
+    </registro>
+    
+    <registro>
+        <ubicacion id="E002">Buenos Aires, Argentina</ubicacion>
+        <fecha>2025-02-09</fecha>
+        <hora>10:15</hora>
+        <temperatura>25.3</temperatura>
+        <humedad>70%</humedad>
+        <presion>1008 hPa</presion>
+        <viento>
+            <direccion>Sur</direccion>
+            <velocidad>20 km/h</velocidad>
+        </viento>
+        <lluvia>5 mm</lluvia>
+    </registro>
+    
+    <registro>
+        <ubicacion id="E003">Tokio, Japón</ubicacion>
+        <fecha>2025-02-09</fecha>
+        <hora>22:50</hora>
+        <temperatura>10.1</temperatura>
+        <humedad>55%</humedad>
+        <presion>1015 hPa</presion>
+        <viento>
+            <direccion>Este</direccion>
+            <velocidad>12 km/h</velocidad>
+        </viento>
+        <lluvia>2 mm</lluvia>
+    </registro>
+</estacion_meteorologica>

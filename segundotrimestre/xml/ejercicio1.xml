@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "../dtd/ejercicio1.dtd">
+<catalogo>
+    <libro id="L001" idioma="Español" bestseller="si">
+        <titulo>Las aventuras de Elsa Pato</titulo>
+        <autor>Susana Oria</autor>
+        <autor>Elba Sura</autor>
+        <editorial>Ediciones nose</editorial>
+        <publicacion>2022</publicacion>
+        <genero>Aventura</genero>
+        <paginas>320</paginas>
+        <precio>19,99</precio>
+        <reseña>Un libro que te hará partirte de la risa y el suspenso.</reseña>
+    </libro>
+    
+    <libro id="L002" idioma="Inglés">
+        <titulo>El misterioso caso de la tortilla voladora</titulo>
+        <autor>Aitor Tilla</autor>
+        <publicacion>2020</publicacion>
+        <genero>Misterio</genero>
+        <paginas>250</paginas>
+        <precio>15,50</precio>
+        <reseña>Una novela llena de giros... y tortillazos inesperados.</reseña>
+    </libro>
+    
+    <libro id="L003" idioma="Francés" bestseller="si">
+        <titulo>The GOAT</titulo>
+        <autor>Lionel Andrés Messi Cuccittini</autor>
+        <editorial>Goat</editorial>
+        <publicacion>2023</publicacion>
+        <genero>GOAT</genero>
+        <paginas>10</paginas>
+        <precio>10</precio>
+    </libro>
+</catalogo>

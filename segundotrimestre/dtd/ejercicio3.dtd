@@ -1,0 +1,10 @@
+<!ELEMENT menu (categoria+)>
+<!ELEMENT categoria (nombre, plato+)>
+<!ATTLIST categoria tipo CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT plato (nombre, descripcion, precio, especialidad?)>
+<!ATTLIST plato id ID #REQUIRED>
+<!ATTLIST plato vegetariano (si|no) "no">
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT especialidad (#PCDATA)>

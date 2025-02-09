@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="notas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" type="alumnoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="alumnoType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="curso" type="xs:string"/>
+            <xs:element name="asignaturas" type="asignaturasType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="asignaturasType">
+        <xs:sequence>
+            <xs:element name="asignatura" type="asignaturaType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="asignaturaType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="trimestre1" type="xs:integer"/>
+            <xs:element name="trimestre2" type="xs:integer"/>
+            <xs:element name="trimestre3" type="xs:integer"/>
+            <xs:element name="final" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

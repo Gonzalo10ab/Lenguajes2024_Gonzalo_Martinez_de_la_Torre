@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuracion SYSTEM "../dtd/ejercicio7.dtd">
+<configuracion id="C001">
+    <informacion>
+        <nombre>Medac</nombre>
+        <version>1.2.3</version>
+        <autor>Desarrollador X</autor>
+    </informacion>
+    <base_datos>
+        <host>localhost</host>
+        <puerto>3306</puerto>
+        <usuario_bd>admin</usuario_bd>
+        <contrasena>1234</contrasena>
+        <nombre_bd>app_db</nombre_bd>
+    </base_datos>
+    <usuario>
+        <tema>oscuro</tema>
+        <idioma>es</idioma>
+        <preferencias>activado</preferencias>
+    </usuario>
+    <parametros>
+        <clave>tiempo_espera</clave>
+        <valor>30</valor>
+    </parametros>
+</configuracion>

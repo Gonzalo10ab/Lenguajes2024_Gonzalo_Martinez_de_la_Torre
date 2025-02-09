@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ficha_vehiculo SYSTEM "../dtd/ejercicio6.dtd">
+<ficha_vehiculo id="V001">
+    <marca>Toyota</marca>
+    <modelo>Corolla</modelo>
+    <ano>2020</ano>
+    <matricula>1234-ABC</matricula>
+    <tipo_combustible>Gasolina</tipo_combustible>
+    <potencia>122 CV</potencia>
+    <propietario>
+        <nombre>Gonzalo</nombre>
+        <apellidos>Messi Lionel</apellidos>
+        <dni>56789012X</dni>
+    </propietario>
+</ficha_vehiculo>

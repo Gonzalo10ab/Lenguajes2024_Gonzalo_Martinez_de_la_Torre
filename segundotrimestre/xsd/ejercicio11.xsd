@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="tienda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producto" type="productoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="productoType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="categoria" type="xs:string"/>
+            <xs:element name="precio" type="xs:decimal"/>
+            <xs:element name="stock" type="xs:integer"/>
+            <xs:element name="valoraciones" type="valoracionesType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="descuento" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="valoracionesType">
+        <xs:sequence>
+            <xs:element name="valoracion" type="valoracionType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="valoracionType">
+        <xs:sequence>
+            <xs:element name="usuario" type="xs:string"/>
+            <xs:element name="puntuacion" type="xs:integer"/>
+            <xs:element name="comentario" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

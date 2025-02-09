@@ -1,0 +1,17 @@
+<!ELEMENT apuestas (evento+)>
+<!ELEMENT evento (nombre, deporte, fecha, hora, cuotas, estadisticas)>
+<!ATTLIST evento id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT deporte (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT cuotas (mercado+)>
+<!ELEMENT mercado (tipo, opcion+)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT opcion (nombre, cuota)>
+<!ATTLIST opcion id ID #REQUIRED>
+<!ELEMENT cuota (#PCDATA)>
+<!ELEMENT estadisticas (posesion, tiros_a_puerta, tarjetas)>
+<!ELEMENT posesion (#PCDATA)>
+<!ELEMENT tiros_a_puerta (#PCDATA)>
+<!ELEMENT tarjetas (#PCDATA)>

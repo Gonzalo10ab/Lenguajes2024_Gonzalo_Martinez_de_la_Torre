@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE apuestas SYSTEM "../dtd/ejercicio12.dtd">
+<apuestas>
+    <evento id="E001">
+        <nombre>Real Madrid vs Barcelona</nombre>
+        <deporte>Fútbol</deporte>
+        <fecha>2025-03-15</fecha>
+        <hora>21:00</hora>
+        <cuotas>
+            <mercado>
+                <tipo>Resultado Final</tipo>
+                <opcion id="O001">
+                    <nombre>Real Madrid</nombre>
+                    <cuota>2,10</cuota>
+                </opcion>
+                <opcion id="O002">
+                    <nombre>Empate</nombre>
+                    <cuota>3,50</cuota>
+                </opcion>
+                <opcion id="O003">
+                    <nombre>Barcelona</nombre>
+                    <cuota>2,75</cuota>
+                </opcion>
+            </mercado>
+            <mercado>
+                <tipo>Total de Goles</tipo>
+                <opcion id="O004">
+                    <nombre>Más de 2.5 goles</nombre>
+                    <cuota>1,80</cuota>
+                </opcion>
+                <opcion id="O005">
+                    <nombre>Menos de 2.5 goles</nombre>
+                    <cuota>2,00</cuota>
+                </opcion>
+            </mercado>
+        </cuotas>
+        <estadisticas>
+            <posesion>Real Madrid 55% - Barcelona 45%</posesion>
+            <tiros_a_puerta>Real Madrid 8 - Barcelona 6</tiros_a_puerta>
+            <tarjetas>Real Madrid 2 - Barcelona 3</tarjetas>
+        </estadisticas>
+    </evento>
+    
+    <evento id="E002">
+        <nombre>Los Angeles Lakers vs Miami Heat</nombre>
+        <deporte>Baloncesto</deporte>
+        <fecha>2025-03-20</fecha>
+        <hora>02:00</hora>
+        <cuotas>
+            <mercado>
+                <tipo>Ganador del Partido</tipo>
+                <opcion id="O006">
+                    <nombre>Lakers</nombre>
+                    <cuota>1,65</cuota>
+                </opcion>
+                <opcion id="O007">
+                    <nombre>Heat</nombre>
+                    <cuota>2,20</cuota>
+                </opcion>
+            </mercado>
+        </cuotas>
+        <estadisticas>
+            <posesion>Lakers 52% - Heat 48%</posesion>
+            <tiros_a_puerta>Lakers 102 - Heat 98</tiros_a_puerta>
+            <tarjetas>N/A</tarjetas>
+        </estadisticas>
+    </evento>
+</apuestas>

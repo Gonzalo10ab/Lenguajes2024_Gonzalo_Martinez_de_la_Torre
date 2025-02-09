@@ -1,0 +1,13 @@
+<!ELEMENT ficha_vehiculo (marca, modelo, ano, matricula, tipo_combustible, potencia, propietario)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT tipo_combustible (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ELEMENT propietario (nombre, apellidos, dni)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+
+<!ATTLIST ficha_vehiculo id ID #REQUIRED>

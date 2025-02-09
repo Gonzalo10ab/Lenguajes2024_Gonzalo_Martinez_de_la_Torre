@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resumenenes.css" rel="stylesheet">
+    <title>Resumen de XML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Resumen de XML</h1>
+        <p>XML (Extensible Markup Language) es un lenguaje de marcado desarrollado por el W3C con el propósito de
+            compartir datos a través de diferentes sistemas, como Internet.</p>
+    </header>
+
+    <section>
+        <h2>Características de XML</h2>
+        <ul>
+            <li>No está predefinido, las etiquetas se definen según las necesidades.</li>
+            <li>Constituye un lenguaje de estructura libre, formado por un prólogo y un cuerpo.</li>
+            <li>Debe cumplir con las reglas del W3C para estar bien formado.</li>
+            <li>Utiliza esquemas en forma de árbol con una única raíz.</li>
+            <li>Se distingue de HTML en que no tiene etiquetas predefinidas y debe cumplir normas estrictas de cierre y
+                anidación.</li>
+            <li>Usa espacios de nombres para evitar ambigüedades.</li>
+            <li>Permite el uso de hojas de estilo CSS y XSLT para presentación.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Estructura de un Documento XML</h2>
+        <ul>
+            <li><b>Prólogo</b>: Contiene la declaración XML y puede incluir información sobre el documento.</li>
+            <li><b>Cuerpo</b>: Organizado en estructura de árbol con una única raíz.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sintaxis XML</h2>
+        <ul>
+            <li>Las etiquetas deben estar bien formadas y cerradas correctamente.</li>
+            <li>Los nombres de las etiquetas distinguen entre mayúsculas y minúsculas.</li>
+            <li>Los atributos deben estar entre comillas simples o dobles.</li>
+            <li>Los espacios en blanco no afectan la estructura del documento.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Entidades en XML</h2>
+        <p>XML permite el uso de entidades para representar caracteres especiales:</p>
+        <ul>
+            <li><code>&amp;lt;</code> representa &lt; (menor que).</li>
+            <li><code>&amp;gt;</code> representa &gt; (mayor que).</li>
+            <li><code>&amp;amp;</code> representa &amp; (ampersand).</li>
+            <li><code>&amp;quot;</code> representa " (comilla doble).</li>
+            <li><code>&amp;apos;</code> representa ' (comilla simple).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Validación XML</h2>
+        <p>Para validar un documento XML, se pueden usar:</p>
+        <ul>
+            <li><b>DTD (Document Type Definition):</b> Un metalenguaje que permite la descripción del formato
+                que deben cumplir los datos en un documento XML.</li>
+            <li><b>XML Schema:</b> Lenguaje basado en XML que mejora el DTD, permitiendo definir con más
+                detalle los tipos de datos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tipos de Validación con DTD</h2>
+        <ul>
+            <li><b>DTD Interno</b>: Definido dentro del propio documento XML.</li>
+            <li><b>DTD Externo</b>: Referenciado mediante una URL.</li>
+            <li><b>DTD Mixto</b>: Combinación de ambos métodos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tipos de Elementos DTD</h2>
+        <ul>
+            <li><b>Elemento</b>: &lt;!ELEMENT&gt;</li>
+            <li><b>Atributos</b>: &lt;!ATTLIST&gt;</li>
+            <li><b>Entidades</b>: &lt;!ENTITY&gt;</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cardinalidad</h2>
+        <ul>
+            <li><b>Cardinalidad</b>: Número de veces que aparece el elemento descendiente<br>
+                ?: El elemento aparece 0 o 1 vez.<br>
+                *: El elemento aparece 0 a N veces.<br>
+                +: El elemento aparece 1 a N veces.
+            </li>
+            <li><b>Secuencia</b>: Se indican los elementos que deben de aparecer en el fichero XML.<br>
+                X, Y: Indica que el elemento X tiene que aparecer a continuación de Y.<br>
+                (X|Y): Indica que aparece el elemento X o el elemento Y, pero no los dos al mismo tiempo.
+
+            </li>
+            <li><b>Combinación</b>: Se pueden combinar los símbolos de secuencia y los de cardinalidad.</li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ejemplo de Código XML</h2>
+        <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;biblioteca&gt;
+    &lt;libro&gt;
+        &lt;titulo&gt;Ejemplo de XML&lt;/titulo&gt;
+        &lt;autor&gt;Autor Ejemplo&lt;/autor&gt;
+        &lt;capitulo&gt;
+            &lt;titulocap&gt;Capítulo 1&lt;/titulocap&gt;
+            &lt;texto&gt;Contenido del capítulo 1&lt;/texto&gt;
+        &lt;/capitulo&gt;
+    &lt;/libro&gt;
+&lt;/biblioteca&gt;
+        </pre>
+    </section>
+
+    <footer>
+        <p>Trabajo de clase - Gonzalo Martínez de la Torre</p>
+    </footer>
+</body>
+
+</html>

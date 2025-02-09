@@ -1,0 +1,21 @@
+<!ELEMENT emisor (nombre, cif, telefono)>
+<!ELEMENT cliente (nombre, cif, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT detalles (articulo+)> 
+<!ELEMENT articulo (codigo, tipo, descripcion, cantidad, oferta, pvp, importe)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT oferta (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+<!ATTLIST factura id ID #REQUIRED>
+<!ATTLIST articulo codigo ID #REQUIRED>
+<!ATTLIST articulo tipo (Libro|DVD) #REQUIRED>
+<!ATTLIST oferta (#PCDATA) "Si" | "No">
+<!ATTLIST articulo importe CDATA #REQUIRED>

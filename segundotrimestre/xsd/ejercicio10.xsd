@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="estacion_meteorologica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="registro" type="registroType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="registroType">
+        <xs:sequence>
+            <xs:element name="ubicacion" type="xs:string"/>
+            <xs:element name="fecha" type="xs:string"/>
+            <xs:element name="hora" type="xs:string"/>
+            <xs:element name="temperatura" type="xs:decimal"/>
+            <xs:element name="humedad" type="xs:string"/>
+            <xs:element name="presion" type="xs:string"/>
+            <xs:element name="viento" type="vientoType"/>
+            <xs:element name="lluvia" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vientoType">
+        <xs:sequence>
+            <xs:element name="direccion" type="xs:string"/>
+            <xs:element name="velocidad" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resumenenes.css" rel="stylesheet">
+    <title>Resumen de XML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Validación XML Schema</h1>
+        <p>XML Schema (XSD) permite definir la estructura y restricciones de un documento XML</p>
+    </header>
+
+    <section>
+        <h2>Características de XML</h2>
+        <ul>
+            <li>Es un archivo XML</li>
+            <li>Usa espacio de nombre</li>
+            <li>Su extensión es .XSD</li>
+            <li>Usa espacio de nombre</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Utilidad</h2>
+        <ul>
+            <p>El propósito del esquema XML es definir</p>
+            <li>Los elementos y atributos que pueden aparecer en un documento</li>
+            <li>El número y orden elementos secundarios</li>
+            <li>Los tipos de datos para elementos y atributos</li>
+            <li>Los valores predeterminados y fijos para elementos y atributos</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tipos de datos</h2>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Significado</th>
+            </tr>
+            <tr>
+                <td>string</td>
+                <td>Secuencia de caracteres.</td>
+            </tr>
+            <tr>
+                <td>boolean</td>
+                <td>Toma los valores true o false.</td>
+            </tr>
+            <tr>
+                <td>decimal</td>
+                <td>Número decimal con precisión arbitraria.</td>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td>Número entero positivo o negativo.</td>
+            </tr>
+            <tr>
+                <td>positiveInteger</td>
+                <td>Número entero positivo.</td>
+            </tr>
+            <tr>
+                <td>negativeInteger</td>
+                <td>Número entero negativo.</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>Número de punto flotante de 32 bits de precisión simple.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Número de punto flotante de 64 bits de precisión doble.</td>
+            </tr>
+            <tr>
+                <td>dateTime</td>
+                <td>Hora y fecha en formato “YYYYMM-DDThh:mm:ss”</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>Fecha en formato “YYYY-MM-DD”</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>Hora en formato “hh:mm:ss”</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Elementos Simples</h2>
+        <p>Un elemento simple es aquel que contiene solo texto y no tiene atributos ni elementos secundarios. Se definen
+            en XML Schema utilizando el tipo de dato correspondiente.</p>
+        <code>&lt;xs:element name="nombre" type="xs:string"/&gt;</code>
+
+        <h3>Elementos Complejos</h3>
+        <p>Los elementos complejos pueden contener otros elementos o atributos. Se definen utilizando
+            <code>&lt;xs:complexType&gt;</code>.
+        </p>
+        <pre>
+&lt;xs:element name="persona"&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="nombre" type="xs:string"/&gt;
+            &lt;xs:element name="edad" type="xs:integer"/&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;
+    </pre>
+        <h3>Restricciones</h3>
+        <p>Se pueden aplicar restricciones a los valores de los elementos utilizando
+            <code>&lt;xs:restriction&gt;</code>. Ejemplo de restricción en un número entero
+        <table>
+            <tr>
+                <th>Restricción</th>
+                <th>Significado</th>
+            </tr>
+            <tr>
+                <td>minInclusive</td>
+                <td>Mínimo valor del número.</td>
+            </tr>
+            <tr>
+                <td>minExclusive</td>
+                <td>El número debe ser mayor que el indicado aquí.</td>
+            </tr>
+            <tr>
+                <td>maxInclusive</td>
+                <td>Máximo valor del número.</td>
+            </tr>
+            <tr>
+                <td>maxExclusive</td>
+                <td>El número debe ser menor que el indicado aquí.</td>
+            </tr>
+            <tr>
+                <td>totalDigits</td>
+                <td>Número total de dígitos en el número.</td>
+            </tr>
+            <tr>
+                <td>fractionDigits</td>
+                <td>Número de cifras decimales.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Nº de caracteres del literal o elementos en lista.</td>
+            </tr>
+            <tr>
+                <td>minLength</td>
+                <td>Nº de caracteres mínimo literal o en lista.</td>
+            </tr>
+            <tr>
+                <td>maxLength</td>
+                <td>Número de caracteres máximo del literal o en lista.</td>
+            </tr>
+            <tr>
+                <td>pattern</td>
+                <td>Patrón que se tiene que cumplir indicado con expresiones regulares.</td>
+            </tr>
+        </table>
+        </p>
+        <pre>
+&lt;xs:element name="edad"&gt;
+    &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+            &lt;xs:minInclusive value="0"/&gt;
+            &lt;xs:maxInclusive value="120"/&gt;
+        &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
+&lt;/xs:element&gt;
+    </pre>
+    </section>
+
+    <footer>
+        <p>Trabajo de clase - Gonzalo Martínez de la Torre</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<!ELEMENT notas (alumno+)>
+<!ELEMENT alumno (nombre, apellidos, curso, asignaturas)>
+<!ATTLIST alumno id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT asignaturas (asignatura+)>
+<!ELEMENT asignatura (nombre, trimestre1, trimestre2, trimestre3, final)>
+<!ELEMENT trimestre1 (#PCDATA)>
+<!ELEMENT trimestre2 (#PCDATA)>
+<!ELEMENT trimestre3 (#PCDATA)>
+<!ELEMENT final (#PCDATA)>

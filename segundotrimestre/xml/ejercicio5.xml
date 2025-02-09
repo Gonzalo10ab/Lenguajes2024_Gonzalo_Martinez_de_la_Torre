@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tarjeta_credito SYSTEM "../dtd/ejercicio5.dtd">
+<tarjeta_credito id="T001" cvv="123">
+    <numero>1234 5678 9012 3456</numero>
+    <titular>Lola Mento</titular>
+    <fecha_vencimiento>08-2026</fecha_vencimiento>
+    <tipo>Visa</tipo>
+    <entidad_emisora>EsteBan co</entidad_emisora>
+</tarjeta_credito>

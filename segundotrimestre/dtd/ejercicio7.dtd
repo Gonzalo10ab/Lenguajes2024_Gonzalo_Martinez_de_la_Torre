@@ -1,0 +1,20 @@
+<!ELEMENT configuracion (informacion, base_datos, usuario, parametros)>
+<!ELEMENT informacion (nombre, version, autor)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT base_datos (host, puerto, usuario_bd, contrasena, nombre_bd)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT puerto (#PCDATA)>
+<!ELEMENT usuario_bd (#PCDATA)>
+<!ELEMENT contrasena (#PCDATA)>
+<!ELEMENT nombre_bd (#PCDATA)>
+<!ELEMENT usuario (tema, idioma, preferencias)>
+<!ELEMENT tema (#PCDATA)>
+<!ELEMENT idioma (#PCDATA)>
+<!ELEMENT preferencias (#PCDATA)>
+<!ELEMENT parametros (clave?, valor?)>
+<!ELEMENT clave (#PCDATA)>
+<!ELEMENT valor (#PCDATA)>
+
+<!ATTLIST configuracion id ID #REQUIRED>

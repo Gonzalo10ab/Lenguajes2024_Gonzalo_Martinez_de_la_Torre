@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="apuestas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="evento" type="eventoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="eventoType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="deporte" type="xs:string"/>
+            <xs:element name="fecha" type="xs:string"/>
+            <xs:element name="hora" type="xs:string"/>
+            <xs:element name="cuotas" type="cuotasType"/>
+            <xs:element name="estadisticas" type="estadisticasType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="cuotasType">
+        <xs:sequence>
+            <xs:element name="mercado" type="mercadoType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mercadoType">
+        <xs:sequence>
+            <xs:element name="tipo" type="xs:string"/>
+            <xs:element name="opcion" type="opcionType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="opcionType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="cuota" type="xs:decimal"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="estadisticasType">
+        <xs:sequence>
+            <xs:element name="posesion" type="xs:string"/>
+            <xs:element name="tiros_a_puerta" type="xs:string"/>
+            <xs:element name="tarjetas" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
