@@ -1,0 +1,63 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh;
+    background: linear-gradient(135deg, #4b6cb7, #182848); /* Fondo con degradado */
+    color: #fff; /* Texto en blanco */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center; /* Centra el texto */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    padding: 30px 50px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Título principal */
+h1 {
+    font-size: 32px; /* Tamaño grande para el título */
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+/* Párrafo introductorio */
+p {
+    font-size: 18px; /* Tamaño de texto moderado */
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+/* Contenedor de enlaces */
+.link-container {
+    display: flex;
+    flex-direction: column; /* Alinea los enlaces en columna */
+    gap: 12px; /* Espaciado entre los enlaces */
+}
+
+/* Estilo de enlaces */
+.link-container a {
+    text-decoration: none;
+    font-size: 20px; /* Texto más grande */
+    color: #ffffff; /* Texto en blanco */
+    background-color: #4b6cb7; /* Fondo azul suave */
+    padding: 12px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Efecto de transición */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra de texto sutil */
+}
+
+/* Efecto hover en los enlaces */
+.link-container a:hover {
+    background-color: #355391; /* Color de fondo más oscuro al hacer hover */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+}
+
