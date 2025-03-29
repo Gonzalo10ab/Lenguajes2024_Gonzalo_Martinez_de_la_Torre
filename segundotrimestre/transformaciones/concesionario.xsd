@@ -23,20 +23,6 @@
                       </xs:extension>
                   </xs:simpleContent>
               </xs:complexType>  
-              
-              
-              
-              <!-- <xs:complexType>
-                  <xs:attribute name="metalizado" use="required">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:enumeration value="S"/>
-                        <xs:enumeration value="N"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:attribute>
-                </xs:complexType> -->
-
               </xs:element>
               <xs:element name="precio" type="xs:string" />
               <xs:element name="precio_con_iva">

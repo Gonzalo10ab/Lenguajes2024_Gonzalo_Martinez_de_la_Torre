@@ -5,7 +5,7 @@
     <xsl:template match="/">
         <html>
         <head>
-            <title>Estado del Concesionario</title>
+            <title>Concesionario</title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
