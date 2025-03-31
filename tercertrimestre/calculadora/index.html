@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Martínez de la Torre">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../../images/logo.png" alt="Logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="primertrimestre/index.html">1º Trimestre ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../../primertrimestre/ajedrez/index.html">Ajedrez</a>
+                        <a href="../../primertrimestre/banderas/index.html">Banderas</a>
+                        <a href="../../primertrimestre/cajas/index.html">Cajas</a>
+                        <a href="../../primertrimestre/columnas/index.html">Columnas</a>
+                        <a href="../../primertrimestre/dados/index.html">Dados</a>
+                        <a href="../../primertrimestre/miniweb/index.html">Mini Web</a>
+                        <a href="../../primertrimestre/posicionamientos/index.html">Posicionamientos</a>
+                        <a href="../../primertrimestre/sistema_solar/index.html">Sistema Solar</a>
+                        <a href="../../primertrimestre/tablas/index.html">Tablas</a>
+                        <a href="../../primertrimestre/web_semantica/index.html">Web Semántica</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="../../segundotrimestre/index.html">2º Trimestre ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../../segundotrimestre/dtd/index.html">DTD</a>
+                        <a href="../../segundotrimestre/resumenes/index.html">Resúmenes</a>
+                        <a href="../../segundotrimestre/transformaciones/index.html">Transformaciones</a>
+                        <a href="../../segundotrimestre/xml/index.html">XML</a>
+                        <a href="../../segundotrimestre/xsd/index.html">XSD</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="../index.html">3º Trimestre ▾</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Calculadora</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="calculadora">
+        <!-- Solicita al usuario que introduzca el primer número -->
+        <label>Primer número: <input type="number" id="numero1"></label><br>
+        <!-- Solicita al usuario que introduzca el segundo número -->
+        <label>Segundo número: <input type="number" id="numero2"></label><br>
+        <!-- Botón que al ser pulsado ejecuta la función calcular() -->
+        <button onclick="calcular()">Calcular</button><br>
+        <!-- Muestra la suma de los dos números -->
+        <div class="resultado">La suma es: <span id="suma"></span></div>
+        <!-- Muestra el producto (multiplicación) de los dos números -->
+        <div class="resultado">El producto es: <span id="producto"></span></div>
+        <!-- Muestra cuál de los dos números es mayor -->
+        <div class="resultado">El número mayor es: <span id="mayor"></span></div>
+    </div>
+
+    <script>
+        // Función que calcula la suma, el producto y determina el número mayor
+        function calcular() {
+            // Obtiene los valores introducidos en los inputs y los convierte a números
+            const numero1 = Number(document.getElementById("numero1").value);
+            const numero2 = Number(document.getElementById("numero2").value);
+
+            // Realiza el cálculo de la suma
+            const suma = numero1 + numero2;
+
+            // Realiza el cálculo del producto
+            const producto = numero1 * numero2;
+
+            // Determina cuál de los números es mayor
+            let mayor;
+            if (numero1 > numero2) {
+                mayor = numero1; // Si el primer número es mayor
+            } else if (numero2 > numero1) {
+                mayor = numero2; // Si el segundo número es mayor
+            } else {
+                mayor = "Los números son iguales"; // Si son iguales
+            }
+
+            // Actualiza los elementos HTML con los resultados obtenidos
+            document.getElementById("suma").textContent = suma;
+            document.getElementById("producto").textContent = producto;
+            document.getElementById("mayor").textContent = mayor;
+        }
+    </script>
+</body>
+
+</html>
