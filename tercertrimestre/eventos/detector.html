@@ -30,7 +30,7 @@
 
     function teclaPresionada(evento) {
         let tecla = evento.key.toUpperCase();
-        if (tecla >= 'A' && tecla <= 'Z') {
+        if (tecla >= 'A' && tecla <= 'Z' && tecla.length == 1) {
             cuadro.textContent = tecla;
         }
     }
