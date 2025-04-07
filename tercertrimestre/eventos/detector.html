@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detector de Teclas</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .cuadro {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      background-color: beige;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cuadro" id="cuadro"></div>
+
+  <script>
+    const cuadro = document.getElementById('cuadro');
+
+    function teclaPresionada(evento) {
+        let tecla = evento.key.toUpperCase();
+        if (tecla >= 'A' && tecla <= 'Z') {
+            cuadro.textContent = tecla;
+        }
+    }
+
+    function teclaSoltada() {
+        cuadro.textContent = '';
+    }
+
+    document.addEventListener('keydown', teclaPresionada);
+    document.addEventListener('keyup', teclaSoltada);
+  </script>
+
+</body>
+</html>
