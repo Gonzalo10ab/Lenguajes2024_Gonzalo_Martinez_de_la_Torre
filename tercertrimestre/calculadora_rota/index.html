@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Martínez de la Torre">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <title>Calculadora Rota</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+
+    <div class="calculadora">
+        <div class="pantalla">
+            <input type="text" id="resultado" readonly>
+        </div>
+        <div class="teclado">
+            <button onclick="limpiar()">C</button>
+            <button onclick="borrar()">CE</button>
+            <button onclick="operar('/')">÷</button>
+            <button onclick="operar('*')">x</button>
+            <button onclick="agregarNumero('7')">7</button>
+            <button onclick="agregarNumero('8')">8</button>
+            <button onclick="agregarNumero('9')">9</button>
+            <button onclick="operar('-')">-</button>
+            <button onclick="agregarNumero('4')">4</button>
+            <button onclick="agregarNumero('5')">5</button>
+            <button onclick="agregarNumero('6')">6</button>
+            <button onclick="operar('+')">+</button>
+            <button onclick="agregarNumero('1')">1</button>
+            <button onclick="agregarNumero('2')">2</button>
+            <button onclick="agregarNumero('3')">3</button>
+            <button onclick="operar('1/x')">1/X</button>
+            <button onclick="agregarNumero('0')">0</button>
+            <button onclick="agregarNumero('.')">.</button>
+            <button onclick="operar('raiz')">√</button>
+            <button onclick="operar('potencia')">x<sup>2</sup></button>
+            <button onclick="operar('bin')">Bin</button>
+            <button onclick="operar('hex')">Hex</button>
+            <button id="igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="../js/rutas_dinamicas.js"></script>
+    <script src="calc.js"></script>
+</body>
+
+</html>

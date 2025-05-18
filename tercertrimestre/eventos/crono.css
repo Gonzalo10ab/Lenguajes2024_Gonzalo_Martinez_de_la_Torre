@@ -1,0 +1,44 @@
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1e1e1e;
+        color: #ffffff;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    #cronometro {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    .botones {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .botones button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        background-color: #3399ff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .botones button:hover {
+        background-color: #267fcc;
+    }

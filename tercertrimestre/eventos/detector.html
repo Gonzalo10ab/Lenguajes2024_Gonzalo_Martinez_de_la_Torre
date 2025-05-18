@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Detector de Teclas</title>
-  <style>
-    body {
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-    }
-    .cuadro {
-      width: 200px;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 4rem;
-      background-color: beige;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gonzalo Martínez de la Torre">
+	<link rel="icon" type="image/png" href="../../images/logo.png">
+	<link rel="stylesheet" href="../../style.css">
+	<title>Detector de Teclas</title>
+	<style>
+		body {
+			display: flex;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.cuadro {
+			width: 200px;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 4rem;
+			background-color: rgb(56, 56, 56);
+		}
+	</style>
 </head>
+
 <body>
+	<header>
+		<div id="navbar-container"></div>
+	</header>
 
-  <div class="cuadro" id="cuadro"></div>
+	<div class="cuadro" id="cuadro"></div>
+	<footer>
 
-  <script>
-    const cuadro = document.getElementById('cuadro');
+		<div id="footer-container"></div>
+	</footer>
 
-    function teclaPresionada(evento) {
-        let tecla = evento.key.toUpperCase();
-        if (tecla >= 'A' && tecla <= 'Z' && tecla.length == 1) {
-            cuadro.textContent = tecla;
-        }
-    }
+	<script src="../js/rutas_dinamicas.js"></script>
+	<script>
+		const cuadro = document.getElementById('cuadro');
 
-    function teclaSoltada() {
-        cuadro.textContent = '';
-    }
+		function teclaPresionada(evento) {
+			let tecla = evento.key.toUpperCase();
+			if (tecla >= 'A' && tecla <= 'Z' && tecla.length == 1) {
+				cuadro.textContent = tecla;
+			}
+		}
 
-    document.addEventListener('keydown', teclaPresionada);
-    document.addEventListener('keyup', teclaSoltada);
-  </script>
+		function teclaSoltada() {
+			cuadro.textContent = '';
+		}
+
+		document.addEventListener('keydown', teclaPresionada);
+		document.addEventListener('keyup', teclaSoltada);
+	</script>
 
 </body>
+
 </html>

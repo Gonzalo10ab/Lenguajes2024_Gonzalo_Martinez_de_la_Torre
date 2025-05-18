@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Martínez de la Torre">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Presupuestos para Cajas</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+    <div class="panel">
+        <h2>Presupuestos para cajas</h2>
+        <div class="panel-content">
+            <div class="seccion">
+                <h3>Sección de Cálculo</h3>
+                <label>Ancho (cm):</label><input id="ancho" type="number">
+                <label>Alto (cm):</label><input id="alto" type="number">
+                <label>Largo (cm):</label><input id="largo" type="number">
+                <label>Material:</label>
+                <select id="material">
+                    <option value="Plástico">Plástico</option>
+                    <option value="Cartón">Cartón</option>
+                    <option value="Madera">Madera</option>
+                </select>
+                <button onclick="calcular()">Calcular</button>
+            </div>
+
+            <div class="seccion">
+                <h3>Sección de Configuración</h3>
+                <label>Precio base por m²:</label><input id="precioBase" type="number">
+                <label>Incremento Plástico (%):</label><input id="incPlastico" type="number">
+                <label>Incremento Cartón (%):</label><input id="incCarton" type="number">
+                <label>Incremento Madera (%):</label><input id="incMadera" type="number">
+                <label>IVA (%):</label><input id="iva" type="number">
+            </div>
+        </div>
+
+        <div class="seccion-resultado" id="resultado">
+            <strong>Sección de Resultados</strong><br>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="../js/rutas_dinamicas.js"></script>
+
+    <script src="cajas.js"></script>
+</body>
+
+</html>

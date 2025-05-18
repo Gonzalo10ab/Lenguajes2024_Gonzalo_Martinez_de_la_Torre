@@ -1,0 +1,61 @@
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+input[type="number"] {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #267fcc;
+}
+
+#resultado {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tabla {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 140px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    text-align: left;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
