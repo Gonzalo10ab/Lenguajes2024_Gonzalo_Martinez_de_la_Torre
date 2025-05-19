@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Destino Vacacional</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+    
+    <h1>Destino Vacacional</h1>
+    <p id="mensaje">Me voy de vacaciones...</p>
+    <img id="seta" class="seta" src="../../images/logo.png" alt="Seta" draggable="true">
+
+    <div class="destinos">
+        <div class="destino" data-lugar="la playa">
+            <div class="zona-imagen">
+                <img src="assets/playa.jpg" alt="Playa">
+                <div class="zona-seta"></div>
+            </div>
+        </div>
+        <div class="destino" data-lugar="el lago">
+            <div class="zona-imagen">
+                <img src="assets/lago.jpg" alt="Lago">
+                <div class="zona-seta"></div>
+            </div>
+        </div>
+        <div class="destino" data-lugar="el bosque">
+            <div class="zona-imagen">
+                <img src="assets/bosque.jpg" alt="Bosque">
+                <div class="zona-seta"></div>
+            </div>
+        </div>
+        <div class="destino" data-lugar="la ciudad">
+            <div class="zona-imagen">
+                <img src="assets/ciudad.jpg" alt="Ciudad">
+                <div class="zona-seta"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../js/rutas_dinamicas.js"></script>
+    <script src="vacaciones.js"></script>
+</body>
+
+</html>
