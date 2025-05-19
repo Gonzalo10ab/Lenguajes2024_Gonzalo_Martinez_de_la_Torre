@@ -7,6 +7,7 @@
     
     <!-- Aqui debes enlazar el css -->
     <title>Lista de productos</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,12 +29,13 @@
             <input type="number" id="cantidad" placeholder="Cantidad" value="2">
             <br>
             <button id="botonAdd">Añadir</button>
+            <button id="reiniciar">Limpiar Lista</button>
 
         </div>
         <div class="lista" id="lista">
-            <h2>lista</h2>
+            <h2>Lista</h2>
             <!-- El sigiente div es un ejemplo, lo puedes eliminar al final-->
-            <div class="lista-item"><span>(ejemplo)Manzanas: Cantidad 230 subtotal: </span> <span> 500</span>€</div>
+            <!-- <div class="lista-item"><span>(ejemplo)Manzanas: Cantidad 230 subtotal: </span> <span> 500</span>€</div> -->
         </div>
         <div class="total" id="total">
             <h2>Total</h2>
@@ -43,7 +45,10 @@
 
     <!-- Aqui debes añadir el archivo del codigo javascript-->
 
-
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../js/rutas_dinamicas.js"></script>
 <script src="lista.js"></script>
 </body>
 
