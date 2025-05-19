@@ -1,6 +1,6 @@
 # 📁 Repositorio de Lenguajes de Marcas — Curso 2024/2025
 
-Bienvenido al repositorio de **Lenguajes de Marcas** del curso **24/25**, desarrollado por **Gonzalo Martínez**.
+Bienvenido al repositorio de **Lenguajes de Marcas** del curso **24/25**, desarrollado por **Gonzalo Martínez de la Torre**.
 
 Este proyecto contiene todos los ejercicios realizados durante el año académico, organizados y clasificados por trimestres. Cada trimestre se han incorporado nuevas técnicas y mejoras progresivas que reflejan el aprendizaje alcanzado.
 
@@ -41,5 +41,5 @@ Este repositorio no solo agrupa prácticas, sino que muestra una clara **evoluci
 
 ## 👨‍💻 Autor
 
-**Gonzalo Martínez**  
+**Gonzalo Martínez de la Torre**  
 Estudiante de DAW | Curso 2024/2025
