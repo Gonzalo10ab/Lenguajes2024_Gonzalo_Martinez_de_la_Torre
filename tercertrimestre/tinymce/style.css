@@ -1,0 +1,35 @@
+.editor-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #267fcc;
+}
+
+#resultado {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    border-radius: 8px;
+}

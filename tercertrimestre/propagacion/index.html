@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos: stopPropagation y preventDefault</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+    <main>
+        <h1>Demostración de stopPropagation()</h1>
+        <div class="ejercicio padre" id="padre">
+            Padre (haz clic aquí también)
+            <div class="hijo" id="hijo1">Hijo 1 (con stopPropagation)</div>
+            <div class="hijo" id="hijo2">Hijo 2 (sin stopPropagation)</div>
+        </div>
+
+        <h1>Demostración de preventDefault()</h1>
+        <div class="ejercicio">
+            <button class="btn" id="toggle">Desactivar/activar enlace</button>
+            <br>
+            <a href="https://www.w3schools.com" class="link" id="enlace" target="_blank">Ir a W3Schools</a>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../js/rutas_dinamicas.js"></script>
+    <script src="propagacion.js"></script>
+</body>
+
+</html>

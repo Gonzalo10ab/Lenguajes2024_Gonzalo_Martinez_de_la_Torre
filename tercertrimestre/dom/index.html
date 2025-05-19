@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+    <main>
+        <section class="panel">
+            <h2>Contar DIVs en la Página</h2>
+            <div class="resultado" id="resultado"></div>
+            <div class="contenedor-divs">
+                <div class="caja">Hola</div>
+                <div class="caja"></div>
+                <div class="caja">Texto</div>
+                <div class="caja"></div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Modificar Clases del DOM</h2>
+            <div>
+                <button class="btn" onclick="modificar('fondo')">Color Fondo</button>
+                <button class="btn" onclick="modificar('punteado')">Bordes Punteados</button>
+                <button class="btn" onclick="modificar('redondeado')">Bordes Redondeados</button>
+                <button class="btn" onclick="quitar('oculto')">Aparecer</button>
+                <button class="btn" onclick="agregar('oculto')">Desaparecer</button>
+                <button class="btn" onclick="modificar('grande')">Tamaño Grande</button>
+                <button class="btn" onclick="modificar('chico')">Tamaño Chico</button>
+            </div>
+            <div id="tarjeta" class="tarjeta">
+                Modifica la tarjeta
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+    <script src="../js/rutas_dinamicas.js"></script>
+    <script src="dom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.ejercicio {
+    background-color: #2d2d2d;
+    border: 1px solid #3399ff;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.padre {
+    background-color: #1e1e1e;
+    border: 2px dashed #3399ff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.hijo {
+    background-color: #3399ff;
+    margin: 1rem auto;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.link {
+    color: #3399ff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: #3399ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}

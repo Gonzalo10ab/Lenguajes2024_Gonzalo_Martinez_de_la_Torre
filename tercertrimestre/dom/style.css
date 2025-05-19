@@ -1,0 +1,78 @@
+.panel {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.resultado {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #3399ff;
+}
+
+.contenedor-divs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.caja {
+    background-color: #f0f0f0;
+    color: #000;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.fondo {
+    background-color: #3399ff !important;
+}
+
+.punteado {
+    border: 2px dotted #fff !important;
+}
+
+.redondeado {
+    border-radius: 50px !important;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.grande {
+    transform: scale(1.2);
+}
+
+.chico {
+    transform: scale(0.8);
+}
+
+.btn {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #3399ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
